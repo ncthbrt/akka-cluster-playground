@@ -6,8 +6,8 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="src" t="Include">
         <e p="Playground.Protocol" t="IncludeRecursive">
+          <e p="ActorPaths.cs" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
-          <e p="Message.cs" t="Include" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp2.2" t="Include">
@@ -18,6 +18,7 @@
           <e p="Playground.Protocol.csproj" t="IncludeRecursive" />
         </e>
         <e p="Playground.Shared" t="IncludeRecursive">
+          <e p="ActorMetaData.cs" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="ConfigurationTemplating.cs" t="Include" />
           <e p="obj" t="ExcludeRecursive">
@@ -47,6 +48,7 @@
           <e p="Playground.Web.csproj" t="IncludeRecursive" />
           <e p="Program.cs" t="Include" />
           <e p="Startup.cs" t="Include" />
+          <e p="WebService.cs" t="Include" />
         </e>
         <e p="Playground.Worker" t="IncludeRecursive">
           <e p="akka.conf" t="Include" />

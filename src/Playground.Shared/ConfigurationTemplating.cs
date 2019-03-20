@@ -24,7 +24,7 @@ namespace Playground.Shared
             var template = Template.Parse(templateText);
             var environment = ConvertToObjectDictionary(Environment.GetEnvironmentVariables());
             var configuration = ConfigurationFactory.ParseString(template.Render(Hash.FromDictionary(environment)));
-            return configuration.WithFallback(fallback ?? Config.Empty);             
+            return configuration.WithFallback(fallback ?? Config.Empty);                         
         }
     }
 }
