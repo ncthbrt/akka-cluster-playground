@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+        <LangVersion>latest</LangVersion>
+        <OutputType>Exe</OutputType>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Akka" Version="1.3.12" />
+        <PackageReference Include="Akka.Cluster" Version="1.3.12" />
+        <PackageReference Include="Akka.Cluster.Sharding" Version="1.3.12-beta" />
+        <PackageReference Include="Akka.Cluster.Tools" Version="1.3.12" />
+        <PackageReference Include="LanguageExt.Core" Version="3.1.15" />
+        <PackageReference Include="Petabridge.Cmd.Cluster" Version="0.5.0" />
+        <PackageReference Include="Petabridge.Cmd.Cluster.Sharding" Version="0.5.0-beta" />
+        <PackageReference Include="Petabridge.Cmd.Host" Version="0.5.0" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\Playground.Shared\Playground.Shared.csproj" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <None Update="akka.conf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

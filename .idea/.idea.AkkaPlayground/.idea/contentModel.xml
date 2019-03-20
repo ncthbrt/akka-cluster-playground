@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="AkkaPlayground.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src" t="Include">
+        <e p="Playground.Protocol" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Message.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.2" t="Include">
+                <e p="Playground.Protocol.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Playground.Protocol.csproj" t="IncludeRecursive" />
+        </e>
+        <e p="Playground.Shared" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="ConfigurationTemplating.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.2" t="Include">
+                <e p="Playground.Shared.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Playground.Shared.csproj" t="IncludeRecursive" />
+        </e>
+        <e p="Playground.Web" t="IncludeRecursive">
+          <e p="akka.conf" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Controllers" t="Include">
+            <e p="ExamplesController.cs" t="Include" />
+            <e p="ValuesController.cs" t="Include" />
+          </e>
+          <e p="Dockerfile" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.2" t="Include">
+                <e p="Playground.Web.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Playground.Web.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Startup.cs" t="Include" />
+        </e>
+        <e p="Playground.Worker" t="IncludeRecursive">
+          <e p="akka.conf" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Dockerfile" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.2" t="Include">
+                <e p="Playground.Worker.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Playground.Worker.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="WorkerService.cs" t="Include" />
+        </e>
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_AkkaPlayground.-169523576.00" t="ExcludeRecursive" />
+  </component>
+</project>
