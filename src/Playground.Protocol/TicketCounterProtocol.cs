@@ -4,7 +4,7 @@ namespace Playground.Protocol
     {
         public class IncrementTickets
         {
-            public int TicketCount { get; }
+            public int TicketCount { get; set; }
 
             public IncrementTickets(int ticketCount)
             {
@@ -13,7 +13,7 @@ namespace Playground.Protocol
         }
         public class IncrementedTickets
         {
-            public int NewTotalTicketCount { get; }
+            public int NewTotalTicketCount { get; set; }
 
             public IncrementedTickets(int ticketCount)
             {
@@ -27,7 +27,7 @@ namespace Playground.Protocol
         
         public class RetrievedTicketCount
         {
-            public int Count { get; }
+            public int Count { get; set; }
 
             public RetrievedTicketCount(int count)
             {

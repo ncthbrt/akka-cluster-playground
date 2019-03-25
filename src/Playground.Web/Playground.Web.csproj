@@ -24,6 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Playground.Protocol\Playground.Protocol.csproj" />
       <ProjectReference Include="..\Playground.Shared\Playground.Shared.csproj" />
     </ItemGroup>
 

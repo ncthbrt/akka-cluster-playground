@@ -7,8 +7,6 @@ services:
       # to connect to it. The lighthouse includes the Petabridge cluster extension allowing one to
       # easily view connected nodes
       - '9110:9110'
-      # Port 4053 is used by lighthouse for inter-actor communication
-      - '4053:4053'
     environment:
       ACTORSYSTEM: "playground"
       # The cluster IP (bit of a misnomer, here it's the hostname) is derived from the service name (lighthouse)
@@ -25,8 +23,6 @@ services:
     ports:
       # Api port
       - "5050:5050"
-      # Port used for inter-actor communication. Possibly should standardise on a particular port 
-      - '4054:4053'
       # Map port 9110 to 9111. Port 9111 is used to connect to Petabridge.cmd for this node
       - '9111:9110'
     depends_on:
@@ -34,7 +30,9 @@ services:
       - playground.worker.2
       - lighthouse
     environment:
-      ASPNETCORE_ENVIRONMENT: local    
+      ASPNETCORE_ENVIRONMENT: local
+      CLUSTER_IP: playground.web
+      CLUSTER_PORT: 4053
   playground.worker.1:
     # Injected by visual studio, which messes with the image
     image: ${DOCKER_REGISTRY-}playgroundworker
@@ -43,8 +41,6 @@ services:
       dockerfile: src/Playground.Worker/Dockerfile
       target: runner
     ports:      
-      # Port used for inter-actor communication. Possibly should standardise on a particular port 
-      - '4055:4053'
       # Map port 9110 to 9112. Port 9112 is used to connect to Petabridge.cmd for this node
       - '9112:9110'
     depends_on:      
@@ -52,7 +48,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: local
       CLUSTER_IP: playground.worker.1
-      CLUSTER_PORT: 4055
+      CLUSTER_PORT: 4053
   playground.worker.2:
     # Injected by visual studio, which messes with the image
     image: ${DOCKER_REGISTRY-}playgroundworker
@@ -61,8 +57,6 @@ services:
       dockerfile: src/Playground.Worker/Dockerfile
       target: runner
     ports:
-      # Port used for inter-actor communication. Possibly should standardise on a particular port 
-      - '4056:4053'
       # Map port 9110 to 9112. Port 9112 is used to connect to Petabridge.cmd for this node
       - '9113:9110'
     depends_on:
@@ -70,4 +64,4 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: local
       CLUSTER_IP: playground.worker.2
-      CLUSTER_PORT: 4056
+      CLUSTER_PORT: 4053

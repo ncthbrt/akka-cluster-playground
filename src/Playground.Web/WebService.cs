@@ -3,21 +3,20 @@ using System.Threading;
 using System.Threading.Tasks;
 using Akka.Actor;
 using Akka.Cluster.Tools.PublishSubscribe;
+using Akka.Cluster.Tools.Singleton;
 using Akka.Configuration;
 using Petabridge.Cmd.Host;
+using Playground.Protocol;
 
 namespace Playground.Web
 {
     public class WebService : IDisposable
     {
-        private readonly string _actorSystemName;
-        private readonly Config _akkaConfig;
+        public IActorRef TicketActor { get; }
 
         public WebService(string actorSystemName, Config akkaConfig)
         {
-            _actorSystemName = actorSystemName;
-            _akkaConfig = akkaConfig;
-            _system = ActorSystem.Create(_actorSystemName, _akkaConfig);
+            _system = ActorSystem.Create(actorSystemName, akkaConfig);
             {
                 var cmd = PetabridgeCmd.Get(_system);
                 cmd.RegisterCommandPalette(Petabridge.Cmd.Cluster.ClusterCommands.Instance);
@@ -26,17 +25,21 @@ namespace Playground.Web
                 cmd.Start();
             }
             DistributedPubSub.Get(_system);
+            
+            TicketActor = _system.ActorOf(ActorPaths.TicketCounterActor.ProxyProps(_system), ActorPaths.TicketCounterActor.Name + "Proxy");            
+
         }       
         
         private ActorSystem _system;        
         
-        private async void StopAsync()
+        private void StopAsync()
         {
-            await CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance);
+            CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance).Wait();
         }
 
         public void Dispose()
         {
+            Console.WriteLine("STOPPING");
             StopAsync();            
         }
     }

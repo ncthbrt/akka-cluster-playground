@@ -11,21 +11,46 @@ namespace Playground.Shared
         public DistributedSingletonActorMetaData(string name, Option<string> role) : base(name, role)
         {
         }
+        
+        public ClusterSingletonManagerSettings ManagerSettings(ActorSystem system)
+        {
+            var config = system.Settings.Config.GetConfig("akka.cluster.singleton");
+            var handoverInternval = config.GetTimeSpan("hand-over-retry-interval", new TimeSpan?(), true);                                    
+            return new ClusterSingletonManagerSettings(
+                Name,
+                Role.IfNoneUnsafe(() => null),
+                Akka.Cluster.Cluster.Get(system).DowningProvider.DownRemovalMargin,
+                handoverInternval
+            ).WithSingletonName(Name);            
+        }
 
-        public Props ProxyProps(ActorSystem system)
+        public ClusterSingletonProxySettings ProxySettings(ActorSystem system)
         {
             var config = system.Settings.Config.GetConfig("akka.cluster.singleton-proxy");
             var identificationInterval = config.GetTimeSpan("singleton-identification-interval", new TimeSpan?(), true);
             var bufferSize = config.GetInt("buffer-size", 0);
-            
+            return new ClusterSingletonProxySettings(
+                Name,
+                Role.IfNoneUnsafe(() => null),
+                identificationInterval,
+                bufferSize
+            );            
+        }
+
+        public Props ProxyProps(ActorSystem system)
+        {                        
             return ClusterSingletonProxy.Props(
-                "user/singleton-manager/"+Name,
-                 new ClusterSingletonProxySettings(
-                    Name,
-                    Role.IfNoneUnsafe(() => null),
-                    identificationInterval,
-                    bufferSize
-                )
+                "/user/"+Name,
+                 ProxySettings(system)
+            );
+        }
+        
+        public Props ManagerProps(ActorSystem system, Props childProps)
+        {
+            return ClusterSingletonManager.Props(
+                childProps,
+                PoisonPill.Instance,
+                ManagerSettings(system)
             );
         }
     }

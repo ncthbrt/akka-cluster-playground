@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using Akka.Actor;
 using static Playground.Protocol.TicketCounterProtocol;
@@ -10,7 +11,11 @@ namespace Playground.Worker
         
         public TicketCounterActor()
         {
-            Receive<GetTicketCount>(_ => Context.Sender.Tell(new RetrievedTicketCount(_ticketCount)));
+            Console.WriteLine("STARTEDTICKET COUNT ACTOR");
+            Receive<GetTicketCount>(_ =>
+            {
+                Context.Sender.Tell(new RetrievedTicketCount(_ticketCount));                
+            });
             Receive<IncrementTickets>(msg =>
             {
                 _ticketCount += msg.TicketCount;                

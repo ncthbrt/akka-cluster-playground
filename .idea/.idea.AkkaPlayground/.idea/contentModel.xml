@@ -7,6 +7,7 @@
       <e p="src" t="Include">
         <e p="Playground.Protocol" t="IncludeRecursive">
           <e p="ActorPaths.cs" t="Include" />
+          <e p="ActorRoles.cs" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
@@ -37,7 +38,7 @@
           <e p="akka.conf" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="Controllers" t="Include">
-            <e p="AnimalController.cs" t="Include" />
+            <e p="TicketsController.cs" t="Include" />
           </e>
           <e p="Dockerfile" t="Include" />
           <e p="obj" t="ExcludeRecursive">

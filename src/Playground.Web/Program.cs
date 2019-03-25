@@ -11,7 +11,7 @@ namespace Playground.Web
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            WebHost.CreateDefaultBuilder(args).UseUrls("http://0.0.0.0:5050")
                 .UseStartup<Startup>();
     }
 }
