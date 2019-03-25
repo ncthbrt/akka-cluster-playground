@@ -32,7 +32,7 @@ namespace Playground.Worker
             cmd.Start();
             
             DistributedPubSub.Get(_system);
-
+            
             token.Register(StopAsync);
         }
         

@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b00edf70-3276-4fa2-ab52-4ddf28662b5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Playground.Web/WebService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Shared/DistributedActorMetaData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AkkaPlayground/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AkkaPlayground/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AkkaPlayground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AkkaPlayground/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground.Protocol/Message.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Playground.Protocol/Playground.Protocol.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Protocol/Playground.Protocol.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground.Shared/ConfigurationTemplating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Shared/ConfigurationTemplating.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Web/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground.Worker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Worker/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Shared/Playground.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Shared/Playground.Shared.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Web/Controllers/ExamplesController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Web/Controllers/ValuesController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Worker/Playground.Worker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Worker/Playground.Worker.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,60 +26,86 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Web/WebService.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="234">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
-                <marker date="1553096588451" expanded="true" signature="6:181" ph="..." />
-                <marker date="1553096588451" expanded="true" signature="207:1350" ph="{...}" />
-                <marker date="1553096588451" expanded="true" signature="251:1348" ph="{...}" />
-                <marker date="1553096588451" expanded="true" signature="422:1025" ph="{...}" />
-                <marker date="1553096588451" expanded="true" signature="1134:1254" ph="{...}" />
-                <marker date="1553096588451" expanded="true" signature="1285:1342" ph="{...}" />
+                <marker date="1553517139902" expanded="true" signature="55:403" ph="{...}" />
+                <marker date="1553517139902" expanded="true" signature="92:401" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Web/Startup.cs">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedActorMetaData.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="74" />
+            <state relative-caret-position="130">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding>
-                <marker date="1553096880160" expanded="true" signature="6:304" ph="..." />
-                <marker date="1553096880160" expanded="true" signature="330:1887" ph="{...}" />
-                <marker date="1553096880160" expanded="true" signature="357:1885" ph="{...}" />
-                <marker date="1553096880160" expanded="true" signature="416:479" ph="{...}" />
-                <marker date="1553096880160" expanded="true" signature="702:1271" ph="{...}" />
-                <marker date="1553096880160" expanded="true" signature="1459:1879" ph="{...}" />
-                <marker date="1553096880160" expanded="true" signature="1506:1583" ph="{...}" />
-                <marker date="1553096880160" expanded="true" signature="1600:1803" ph="{...}" />
+                <marker date="1553516294407" expanded="true" signature="47:348" ph="{...}" />
+                <marker date="1553516294407" expanded="true" signature="91:346" ph="{...}" />
+                <marker date="1553516294407" expanded="true" signature="252:322" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="378">
+              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
               <folding>
-                <marker date="1553096724644" expanded="true" signature="46:739" ph="{...}" />
-                <marker date="1553096724644" expanded="true" signature="79:737" ph="{...}" />
-                <marker date="1553096724644" expanded="true" signature="184:477" ph="{...}" />
-                <marker date="1553096724644" expanded="true" signature="662:731" ph="{...}" />
+                <marker date="1553517125823" expanded="true" signature="6:86" ph="..." />
+                <marker date="1553517125823" expanded="true" signature="115:1033" ph="{...}" />
+                <marker date="1553517125823" expanded="true" signature="195:1031" ph="{...}" />
+                <marker date="1553517125823" expanded="true" signature="312:332" ph="{...}" />
+                <marker date="1553517125823" expanded="true" signature="385:1025" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/51AC4E32-6C60-4827-8158-C4A8DC5E08CE/eb/0eaaf1b5/Option`1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="488" column="13" selection-start-line="488" selection-start-column="13" selection-end-line="488" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/8e/eb1c69b4/ClusterSingletonProxySettings.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+              <folding>
+                <marker date="1553516412238" expanded="true" signature="0:362" ph="/* Decompiled with JetBrains decompiler ... */" />
+                <marker date="1553516412238" expanded="false" signature="370:421" ph="..." />
+                <marker date="1553516412238" expanded="true" signature="461:8166" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="581:8164" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="590:774" ph="///TBD ... " />
+                <marker date="1553516412238" expanded="true" signature="856:1314" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="1320:1418" ph="///TBD ... " />
+                <marker date="1553516412238" expanded="true" signature="1488:1841" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="1847:2019" ph="/// The actor name of the singleton actor that is started by the &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.Cluste ... " />
+                <marker date="1553516412238" expanded="true" signature="2066:2173" ph="/// The role of the cluster nodes where the singleton can be deployed. ... " />
+                <marker date="1553516412238" expanded="true" signature="2211:2323" ph="/// Interval at which the proxy will try to resolve the singleton instance. ... " />
+                <marker date="1553516412238" expanded="true" signature="2390:2571" ph="/// If the location of the singleton is unknown the proxy will buffer this number of messages and deliver them wh ... " />
+                <marker date="1553516412238" expanded="true" signature="2612:3962" ph="/// Creates new instance of the &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt;. ... " />
+                <marker date="1553516412238" expanded="true" signature="4121:4732" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="4738:5290" ph="/// Creates a new &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt; setting with the sp ... " />
+                <marker date="1553516412238" expanded="true" signature="5378:5473" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="5479:6088" ph="/// Creates a new &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt; setting with the sp ... " />
+                <marker date="1553516412238" expanded="true" signature="6151:6292" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="6298:6838" ph="/// Creates a new &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt; setting with the sp ... " />
+                <marker date="1553516412238" expanded="true" signature="6962:7093" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="7099:7567" ph="/// Creates a new &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt; setting with the sp ... " />
+                <marker date="1553516412238" expanded="true" signature="7639:7744" ph="{...}" />
+                <marker date="1553516412238" expanded="true" signature="7940:8160" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -86,52 +114,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/Playground.Protocol.csproj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="208">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="159">
+              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
-                <marker date="1553096968993" expanded="true" signature="55:241" ph="{...}" />
-                <marker date="1553096968993" expanded="true" signature="92:239" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-              <folding>
-                <marker date="1553096908181" expanded="false" signature="6:204" ph="..." />
-                <marker date="1553096908181" expanded="true" signature="233:1070" ph="{...}" />
-                <marker date="1553096908181" expanded="true" signature="260:1068" ph="{...}" />
-                <marker date="1553096908181" expanded="true" signature="319:1062" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Shared/ConfigurationTemplating.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <marker date="1553096634097" expanded="false" signature="6:135" ph="..." />
-                <marker date="1553096634097" expanded="true" signature="164:1089" ph="{...}" />
-                <marker date="1553096634097" expanded="true" signature="214:1087" ph="{...}" />
-                <marker date="1553096634097" expanded="true" signature="321:585" ph="{...}" />
-                <marker date="1553096634097" expanded="true" signature="448:548" ph="{...}" />
-                <marker date="1553096634097" expanded="true" signature="693:1081" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="29:862" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="77:860" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="121:310" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="229:300" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="350:557" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="468:547" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="602:634" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="685:854" ph="{...}" />
+                <marker date="1553510539738" expanded="true" signature="785:844" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -140,8 +143,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Playground.Shared/Playground.Shared.csproj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="182">
+              <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Playground.Worker.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -163,20 +175,26 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2FDDF0A-6DD5-4565-B4F4-110719FC1B14/fa/eba86f51/ActorSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/aa/decd0d65/DistributedPubSub.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Web/WebService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Worker/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F9A6BF9-CC47-4E04-95B6-4187B8F17D2C/97/ca21f69b/IDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Shared/ConfigurationTemplating.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C9C705E6-7371-44B6-845F-D86D7EC2D731/3c/42f746b2/Environment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Web/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/ExamplesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedActorMetaData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D427BD81-0E62-4800-BB03-CA6159151982/03/efc9c0cc/Template.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Web/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/aa/decd0d65/DistributedPubSub.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/51AC4E32-6C60-4827-8158-C4A8DC5E08CE/eb/0eaaf1b5/Option`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/8e/eb1c69b4/ClusterSingletonProxySettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/ef/3c9f8ca7/ClusterSingletonProxy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32C7DA0B-DE3E-4433-B1FA-3A6000248638/7d/28515fbb/ServiceCollectionServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D427BD81-0E62-4800-BB03-CA6159151982/32/192a764e/Hash.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -192,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/Playground.Protocol/Message.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/WorkerServicve.cs" />
         <option value="$PROJECT_DIR$/.dockerignore" />
-        <option value="$PROJECT_DIR$/src/Playground.Shared/Playground.Shared.csproj" />
         <option value="$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Playground.Web/Dockerfile" />
@@ -201,13 +218,20 @@
         <option value="$PROJECT_DIR$/src/Playground.Web/Program.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Web/Controllers/ValuesController.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/akka.conf" />
-        <option value="$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Web/WebService.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Shared/ConfigurationTemplating.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Protocol/Playground.Protocol.csproj" />
         <option value="$PROJECT_DIR$/src/Playground.Web/Startup.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/Program.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalController.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Worker/TicketCounter.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Worker/TicketCounterActor.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Shared/Playground.Shared.csproj" />
+        <option value="$PROJECT_DIR$/src/Playground.Shared/DistributedActorMetaData.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" />
       </list>
     </option>
@@ -222,41 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Playground.Protocol" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Playground.Web" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Playground.Worker" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -285,6 +274,48 @@
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Playground.Protocol" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Playground.Shared" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Playground.Worker" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Playground.Worker" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Actors" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -352,12 +383,14 @@
       <option name="presentableId" value="Default" />
       <updated>1553072767062</updated>
       <workItem from="1553072770385" duration="5265000" />
-      <workItem from="1553086773964" duration="8539000" />
+      <workItem from="1553086773964" duration="9042000" />
+      <workItem from="1553498798627" duration="288000" />
+      <workItem from="1553501293480" duration="4498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13804000" />
+    <option name="totallyTimeSpent" value="19093000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,12 +405,11 @@
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18104367" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18530351" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="REST Client" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -385,14 +417,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.31991953" />
-      <window_info anchor="bottom" id="Docker" order="8" visible="true" weight="0.32997987" />
+      <window_info anchor="bottom" id="NuGet" order="7" visible="true" weight="0.31991953" />
+      <window_info anchor="bottom" id="Docker" order="8" weight="0.32997987" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="14" weight="0.32997987" />
+      <window_info anchor="bottom" id="REST Client" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -474,62 +507,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Playground.Worker.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/Controllers/ValuesController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/appsettings.Development.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" lean-forward="true" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/appsettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/ValuesController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <marker date="1553094836278" expanded="true" signature="6:65" ph="..." />
-            <marker date="1553094836278" expanded="true" signature="103:907" ph="{...}" />
-            <marker date="1553094836278" expanded="true" signature="202:905" ph="{...}" />
-            <marker date="1553094836278" expanded="true" signature="307:383" ph="{...}" />
-            <marker date="1553094836278" expanded="true" signature="486:534" ph="{...}" />
-            <marker date="1553094836278" expanded="true" signature="631:651" ph="{...}" />
-            <marker date="1553094836278" expanded="true" signature="763:783" ph="{...}" />
-            <marker date="1553094836278" expanded="true" signature="879:899" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/ExamplesController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <marker date="1553085425883" expanded="true" signature="69:175" ph="{...}" />
-            <marker date="1553085425883" expanded="true" signature="152:173" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/Controllers/ValuesController.cs" />
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/appsettings.Development.json" />
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/appsettings.json" />
     <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -544,28 +524,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/akka.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Web/akka.conf">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <marker date="1553094903394" expanded="true" signature="6:63" ph="..." />
-            <marker date="1553094903394" expanded="true" signature="89:416" ph="{...}" />
-            <marker date="1553094903394" expanded="true" signature="116:414" ph="{...}" />
-            <marker date="1553094903394" expanded="true" signature="169:243" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32C7DA0B-DE3E-4433-B1FA-3A6000248638/7d/28515fbb/ServiceCollectionServiceExtensions.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -581,76 +541,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs">
+    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/Message.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/aa/decd0d65/DistributedPubSub.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <marker date="1553096574170" expanded="false" signature="6:167" ph="..." />
-            <marker date="1553096574170" expanded="true" signature="196:1397" ph="{...}" />
-            <marker date="1553096574170" expanded="true" signature="229:1395" ph="{...}" />
-            <marker date="1553096574170" expanded="true" signature="403:509" ph="{...}" />
-            <marker date="1553096574170" expanded="true" signature="679:1214" ph="{...}" />
-            <marker date="1553096574170" expanded="true" signature="1262:1382" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/Playground.Shared.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/ConfigurationTemplating.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <marker date="1553096634097" expanded="false" signature="6:135" ph="..." />
-            <marker date="1553096634097" expanded="true" signature="164:1089" ph="{...}" />
-            <marker date="1553096634097" expanded="true" signature="214:1087" ph="{...}" />
-            <marker date="1553096634097" expanded="true" signature="321:585" ph="{...}" />
-            <marker date="1553096634097" expanded="true" signature="448:548" ph="{...}" />
-            <marker date="1553096634097" expanded="true" signature="693:1081" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/Message.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <marker date="1553096724644" expanded="true" signature="46:739" ph="{...}" />
-            <marker date="1553096724644" expanded="true" signature="79:737" ph="{...}" />
-            <marker date="1553096724644" expanded="true" signature="184:477" ph="{...}" />
-            <marker date="1553096724644" expanded="true" signature="662:731" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-end-line="27" />
+        <state relative-caret-position="230">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Web/WebService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="520">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <marker date="1553096588451" expanded="true" signature="6:181" ph="..." />
+            <marker date="1553096588451" expanded="false" signature="6:181" ph="..." />
             <marker date="1553096588451" expanded="true" signature="207:1350" ph="{...}" />
             <marker date="1553096588451" expanded="true" signature="251:1348" ph="{...}" />
             <marker date="1553096588451" expanded="true" signature="422:1025" ph="{...}" />
@@ -662,10 +566,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Web/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
+        <state relative-caret-position="468">
           <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="74" />
           <folding>
-            <marker date="1553096880160" expanded="true" signature="6:304" ph="..." />
+            <marker date="1553096880160" expanded="false" signature="6:304" ph="..." />
             <marker date="1553096880160" expanded="true" signature="330:1887" ph="{...}" />
             <marker date="1553096880160" expanded="true" signature="357:1885" ph="{...}" />
             <marker date="1553096880160" expanded="true" signature="416:479" ph="{...}" />
@@ -677,17 +581,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/aa/decd0d65/DistributedPubSub.cs">
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="524">
+          <caret line="26" column="23" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <marker date="1553094903394" expanded="false" signature="6:63" ph="..." />
+            <marker date="1553094903394" expanded="true" signature="89:416" ph="{...}" />
+            <marker date="1553094903394" expanded="true" signature="116:414" ph="{...}" />
+            <marker date="1553094903394" expanded="true" signature="169:243" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/ExamplesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/ValuesController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/akka.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1553507383557" expanded="true" signature="69:141" ph="{...}" />
+            <marker date="1553507383557" expanded="true" signature="118:139" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        <state relative-caret-position="312">
+          <caret line="23" column="83" lean-forward="true" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
           <folding>
             <marker date="1553096908181" expanded="false" signature="6:204" ph="..." />
             <marker date="1553096908181" expanded="true" signature="233:1070" ph="{...}" />
@@ -697,20 +646,181 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding>
+            <marker date="1553510900903" expanded="false" signature="6:167" ph="..." />
+            <marker date="1553510900903" expanded="true" signature="196:1409" ph="{...}" />
+            <marker date="1553510900903" expanded="true" signature="229:1407" ph="{...}" />
+            <marker date="1553510900903" expanded="true" signature="403:509" ph="{...}" />
+            <marker date="1553510900903" expanded="true" signature="679:1226" ph="{...}" />
+            <marker date="1553510900903" expanded="true" signature="1274:1394" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/ConfigurationTemplating.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <marker date="1553096634097" expanded="false" signature="6:135" ph="..." />
+            <marker date="1553096634097" expanded="true" signature="164:1089" ph="{...}" />
+            <marker date="1553096634097" expanded="true" signature="214:1087" ph="{...}" />
+            <marker date="1553096634097" expanded="true" signature="321:585" ph="{...}" />
+            <marker date="1553096634097" expanded="true" signature="448:548" ph="{...}" />
+            <marker date="1553096634097" expanded="true" signature="693:1081" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <marker date="1553096724644" expanded="true" signature="46:739" ph="{...}" />
+            <marker date="1553096724644" expanded="true" signature="79:737" ph="{...}" />
+            <marker date="1553096724644" expanded="true" signature="184:477" ph="{...}" />
+            <marker date="1553096724644" expanded="true" signature="662:731" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <marker date="1553510585878" expanded="false" signature="6:102" ph="..." />
+            <marker date="1553510585878" expanded="true" signature="131:729" ph="{...}" />
+            <marker date="1553510585878" expanded="true" signature="184:727" ph="{...}" />
+            <marker date="1553510585878" expanded="true" signature="273:611" ph="{...}" />
+            <marker date="1553510585878" expanded="true" signature="431:599" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Playground.Worker.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/Playground.Shared.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/51AC4E32-6C60-4827-8158-C4A8DC5E08CE/eb/0eaaf1b5/Option`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="488" column="13" selection-start-line="488" selection-start-column="13" selection-end-line="488" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedActorMetaData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <marker date="1553516294407" expanded="true" signature="47:348" ph="{...}" />
+            <marker date="1553516294407" expanded="true" signature="91:346" ph="{...}" />
+            <marker date="1553516294407" expanded="true" signature="252:322" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/ef/3c9f8ca7/ClusterSingletonProxy.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3432">
+          <caret line="139" column="7" lean-forward="true" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/Playground.Protocol.csproj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="208">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/8e/eb1c69b4/ClusterSingletonProxySettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+          <folding>
+            <marker date="1553516412238" expanded="true" signature="0:362" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1553516412238" expanded="false" signature="370:421" ph="..." />
+            <marker date="1553516412238" expanded="true" signature="461:8166" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="581:8164" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="590:774" ph="///TBD ... " />
+            <marker date="1553516412238" expanded="true" signature="856:1314" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="1320:1418" ph="///TBD ... " />
+            <marker date="1553516412238" expanded="true" signature="1488:1841" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="1847:2019" ph="/// The actor name of the singleton actor that is started by the &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.Cluste ... " />
+            <marker date="1553516412238" expanded="true" signature="2066:2173" ph="/// The role of the cluster nodes where the singleton can be deployed. ... " />
+            <marker date="1553516412238" expanded="true" signature="2211:2323" ph="/// Interval at which the proxy will try to resolve the singleton instance. ... " />
+            <marker date="1553516412238" expanded="true" signature="2390:2571" ph="/// If the location of the singleton is unknown the proxy will buffer this number of messages and deliver them wh ... " />
+            <marker date="1553516412238" expanded="true" signature="2612:3962" ph="/// Creates new instance of the &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt;. ... " />
+            <marker date="1553516412238" expanded="true" signature="4121:4732" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="4738:5290" ph="/// Creates a new &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt; setting with the sp ... " />
+            <marker date="1553516412238" expanded="true" signature="5378:5473" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="5479:6088" ph="/// Creates a new &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt; setting with the sp ... " />
+            <marker date="1553516412238" expanded="true" signature="6151:6292" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="6298:6838" ph="/// Creates a new &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt; setting with the sp ... " />
+            <marker date="1553516412238" expanded="true" signature="6962:7093" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="7099:7567" ph="/// Creates a new &lt;see cref=&quot;T:Akka.Cluster.Tools.Singleton.ClusterSingletonProxySettings&quot; /&gt; setting with the sp ... " />
+            <marker date="1553516412238" expanded="true" signature="7639:7744" ph="{...}" />
+            <marker date="1553516412238" expanded="true" signature="7940:8160" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding>
+            <marker date="1553517125823" expanded="true" signature="6:86" ph="..." />
+            <marker date="1553517125823" expanded="true" signature="115:1033" ph="{...}" />
+            <marker date="1553517125823" expanded="true" signature="195:1031" ph="{...}" />
+            <marker date="1553517125823" expanded="true" signature="312:332" ph="{...}" />
+            <marker date="1553517125823" expanded="true" signature="385:1025" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="234">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <marker date="1553096968993" expanded="true" signature="55:241" ph="{...}" />
-            <marker date="1553096968993" expanded="true" signature="92:239" ph="{...}" />
+            <marker date="1553517139902" expanded="true" signature="55:403" ph="{...}" />
+            <marker date="1553517139902" expanded="true" signature="92:401" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <marker date="1553510539738" expanded="true" signature="29:862" ph="{...}" />
+            <marker date="1553510539738" expanded="true" signature="77:860" ph="{...}" />
+            <marker date="1553510539738" expanded="true" signature="121:310" ph="{...}" />
+            <marker date="1553510539738" expanded="true" signature="229:300" ph="{...}" />
+            <marker date="1553510539738" expanded="true" signature="350:557" ph="{...}" />
+            <marker date="1553510539738" expanded="true" signature="468:547" ph="{...}" />
+            <marker date="1553510539738" expanded="true" signature="602:634" ph="{...}" />
+            <marker date="1553510539738" expanded="true" signature="685:854" ph="{...}" />
+            <marker date="1553510539738" expanded="true" signature="785:844" ph="{...}" />
           </folding>
         </state>
       </provider>
