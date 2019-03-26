@@ -9,21 +9,28 @@ namespace Playground.Worker
     {
         private int _ticketCount = 0;
         
-        public TicketCounterActor()
+        public TicketCounterActor(int maxTickets)
         {
-            Console.WriteLine("STARTEDTICKET COUNT ACTOR");
-            Receive<GetTicketCount>(_ =>
+            _ticketCount = maxTickets;
+            Receive<GetRemainingTicketCount>(_ =>
             {
-                Context.Sender.Tell(new RetrievedTicketCount(_ticketCount));                
+                Context.Sender.Tell(new RetrievedRemainingTicketCount(_ticketCount));                
             });
-            Receive<IncrementTickets>(msg =>
+            Receive<BuyTicket>(msg =>
             {
-                _ticketCount += msg.TicketCount;                
-                Context.Sender.Tell(new IncrementedTickets(_ticketCount));
+                if (_ticketCount <= 0)
+                {
+                    Context.Sender.Tell(new TicketsSoldOut());
+                }
+                else
+                {
+                    --_ticketCount;
+                    Context.Sender.Tell(new TicketPurchased(_ticketCount));                    
+                }                                                
             });
         }
 
-        public static Props Props() => 
-            Akka.Actor.Props.Create(() => new TicketCounterActor());
+        public static Props Props(int ticketCount) => 
+            Akka.Actor.Props.Create(() => new TicketCounterActor(ticketCount));
     }
 }

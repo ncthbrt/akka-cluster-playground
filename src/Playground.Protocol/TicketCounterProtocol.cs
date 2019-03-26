@@ -2,34 +2,33 @@ namespace Playground.Protocol
 {
     public static class TicketCounterProtocol
     {
-        public class IncrementTickets
-        {
-            public int TicketCount { get; set; }
-
-            public IncrementTickets(int ticketCount)
-            {
-                TicketCount = ticketCount;
-            }
+        public class BuyTicket
+        {                        
         }
-        public class IncrementedTickets
+        
+        public abstract class TicketPurchaseResult {}
+        public class TicketPurchased: TicketPurchaseResult 
         {
-            public int NewTotalTicketCount { get; set; }
-
-            public IncrementedTickets(int ticketCount)
+            public int RemainingTicketCount { get; }
+            public TicketPurchased(int remainingTicketCount)
             {
-                NewTotalTicketCount = ticketCount;
+                RemainingTicketCount = remainingTicketCount;
             }
         }
         
-        public class GetTicketCount
+        public class TicketsSoldOut: TicketPurchaseResult 
+        {
+        }
+        
+        public class GetRemainingTicketCount
         {            
         }
         
-        public class RetrievedTicketCount
+        public class RetrievedRemainingTicketCount
         {
-            public int Count { get; set; }
+            public int Count { get; }
 
-            public RetrievedTicketCount(int count)
+            public RetrievedRemainingTicketCount(int count)
             {
                 Count = count;
             }

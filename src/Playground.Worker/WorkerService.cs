@@ -43,7 +43,8 @@ namespace Playground.Worker
 
         private void StartActors()
         {
-            _system.ActorOf(ActorPaths.TicketCounterActor.ManagerProps(_system, TicketCounterActor.Props()), ActorPaths.TicketCounterActor.Name);            
+            _system.ActorOf(ActorPaths.TicketCounterActor.ManagerProps(_system, TicketCounterActor.Props(10)), ActorPaths.TicketCounterActor.Name);
+            ActorPaths.AnimalActors.Start(_system, AnimalActor.Props());
         }
 
         private async void StopAsync()

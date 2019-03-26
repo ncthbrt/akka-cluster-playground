@@ -8,7 +8,9 @@
         <e p="Playground.Protocol" t="IncludeRecursive">
           <e p="ActorPaths.cs" t="Include" />
           <e p="ActorRoles.cs" t="Include" />
+          <e p="AnimalProtocol.cs" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
+          <e p="EnclosureProtocol.cs" t="Include" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp2.2" t="Include">
@@ -24,7 +26,12 @@
           <e p="bin" t="ExcludeRecursive" />
           <e p="ConfigurationTemplating.cs" t="Include" />
           <e p="DistributedActorMetaData.cs" t="Include" />
+          <e p="DistributedShardedActorMetaData.cs" t="Include" />
           <e p="DistributedSingletonActorMetaData.cs" t="Include" />
+          <e p="Domain" t="Include">
+            <e p="Animal.cs" t="Include" />
+            <e p="Enclosure.cs" t="Include" />
+          </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp2.2" t="Include">
@@ -38,6 +45,7 @@
           <e p="akka.conf" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="Controllers" t="Include">
+            <e p="AnimalsController.cs" t="Include" />
             <e p="TicketsController.cs" t="Include" />
           </e>
           <e p="Dockerfile" t="Include" />
@@ -55,6 +63,7 @@
         </e>
         <e p="Playground.Worker" t="IncludeRecursive">
           <e p="Actors" t="Include">
+            <e p="AnimalActor.cs" t="Include" />
             <e p="TicketCounterActor.cs" t="Include" />
           </e>
           <e p="akka.conf" t="Include" />
