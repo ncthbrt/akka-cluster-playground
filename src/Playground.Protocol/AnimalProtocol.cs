@@ -3,6 +3,9 @@ using Playground.Shared.Domain;
 
 namespace Playground.Protocol
 {
+    /// <summary>
+    /// Messages relating to AnimalActor.
+    /// </summary>
     public static class AnimalProtocol
     {
         public class AnimalMessageExtractor : HashCodeMessageExtractor

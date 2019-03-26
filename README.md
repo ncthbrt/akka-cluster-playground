@@ -30,7 +30,7 @@ the system in the worker node in `WorkerService.cs`, and are referenced in the A
 Of note in both `WebService` and `WorkerService` is the use of graceful shutdown, which ensures that a node is gracefully
 stopped, leading to a more reliable system. 
 
-This project implements some patterns to reduce likelihood of typo which follows in the vein of Petabridge's `ActorMetaData`
-pattern. Refer to `DistributedSingletonActorMetaData`, `DistributedShardedActorMetaData` and `ActorPaths` for more details.
+This project implements some of Petabridge's `ActorMetaData` patterns to reduce the likelihood of typos. 
+Refer to `DistributedSingletonActorMetaData`, `DistributedShardedActorMetaData` and `ActorPaths` for more details.
 
 

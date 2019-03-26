@@ -33,6 +33,7 @@ namespace Playground.Web
                             .WithFallback(ConfigurationFactory.Default());
             services.AddSingleton(new WebService(systemName, akkaConfig));
             
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info

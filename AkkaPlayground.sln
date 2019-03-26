@@ -1,25 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{29877D86-61E6-4681-812D-2640169908E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Web", "src\Playground.Web\Playground.Web.csproj", "{F047BD02-8D43-4E70-96A6-831E55CA90F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Web", "src\Playground.Web\Playground.Web.csproj", "{F047BD02-8D43-4E70-96A6-831E55CA90F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Worker", "src\Playground.Worker\Playground.Worker.csproj", "{14A94B2D-31A6-48D1-81C7-6E73DFB155FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Worker", "src\Playground.Worker\Playground.Worker.csproj", "{14A94B2D-31A6-48D1-81C7-6E73DFB155FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Protocol", "src\Playground.Protocol\Playground.Protocol.csproj", "{73D9B36C-A778-4D40-996F-097955BB5405}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Protocol", "src\Playground.Protocol\Playground.Protocol.csproj", "{73D9B36C-A778-4D40-996F-097955BB5405}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Shared", "src\Playground.Shared\Playground.Shared.csproj", "{D1EF0043-7C74-4738-BD9F-E2C151751DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Shared", "src\Playground.Shared\Playground.Shared.csproj", "{D1EF0043-7C74-4738-BD9F-E2C151751DAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{960981D8-A887-4A9A-99D7-A414E830E1D8}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{283D666D-C893-4EFC-9AD5-8B5FD3B6C149}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{F047BD02-8D43-4E70-96A6-831E55CA90F6} = {29877D86-61E6-4681-812D-2640169908E8}
-		{14A94B2D-31A6-48D1-81C7-6E73DFB155FE} = {29877D86-61E6-4681-812D-2640169908E8}
-		{73D9B36C-A778-4D40-996F-097955BB5405} = {29877D86-61E6-4681-812D-2640169908E8}
-		{D1EF0043-7C74-4738-BD9F-E2C151751DAB} = {29877D86-61E6-4681-812D-2640169908E8}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F047BD02-8D43-4E70-96A6-831E55CA90F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +42,21 @@ Global
 		{D1EF0043-7C74-4738-BD9F-E2C151751DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1EF0043-7C74-4738-BD9F-E2C151751DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1EF0043-7C74-4738-BD9F-E2C151751DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283D666D-C893-4EFC-9AD5-8B5FD3B6C149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283D666D-C893-4EFC-9AD5-8B5FD3B6C149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283D666D-C893-4EFC-9AD5-8B5FD3B6C149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283D666D-C893-4EFC-9AD5-8B5FD3B6C149}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F047BD02-8D43-4E70-96A6-831E55CA90F6} = {29877D86-61E6-4681-812D-2640169908E8}
+		{14A94B2D-31A6-48D1-81C7-6E73DFB155FE} = {29877D86-61E6-4681-812D-2640169908E8}
+		{73D9B36C-A778-4D40-996F-097955BB5405} = {29877D86-61E6-4681-812D-2640169908E8}
+		{D1EF0043-7C74-4738-BD9F-E2C151751DAB} = {29877D86-61E6-4681-812D-2640169908E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0733FD80-E65B-40BD-A991-B4F7A4F57057}
 	EndGlobalSection
 EndGlobal

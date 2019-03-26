@@ -10,7 +10,6 @@ namespace Playground.Shared
         public DistributedShardedActorMetaData(string name, Option<string> role) : base(name, role)
         {            
         }
-
         public IActorRef StartProxy(ActorSystem system)
         {
             return ClusterSharding.Get(system).StartProxy(
@@ -19,6 +18,8 @@ namespace Playground.Shared
                 new T()
             );
         }
+
+
         
         public IActorRef Start(ActorSystem system, Props actorProps)
         {           

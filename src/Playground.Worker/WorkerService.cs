@@ -9,6 +9,9 @@ using Playground.Protocol;
 
 namespace Playground.Worker
 {
+    /// <summary>
+    /// The Worker service contains actual actors.
+    /// </summary>
     public class WorkerService
     {
         private readonly string _actorSystemName;
@@ -24,6 +27,7 @@ namespace Playground.Worker
         private ActorSystem _system;
         public Task TerminationHandle => _system.WhenTerminated;
 
+        //Creating a new WorkerService creates a new ActorSystem.
         public void Start(CancellationToken token)
         {
             _system = ActorSystem.Create(_actorSystemName, _akkaConfig);
@@ -43,7 +47,10 @@ namespace Playground.Worker
 
         private void StartActors()
         {
-            _system.ActorOf(ActorPaths.TicketCounterActor.ManagerProps(_system, TicketCounterActor.Props(10)), ActorPaths.TicketCounterActor.Name);
+            //Start a singleton.
+            ActorPaths.TicketCounterActor.Start(_system, TicketCounterActor.Props(10));
+
+            //Start a sharded actor definition.
             ActorPaths.AnimalActors.Start(_system, AnimalActor.Props());
         }
 

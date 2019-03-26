@@ -10,11 +10,19 @@ using Playground.Protocol;
 
 namespace Playground.Web
 {
+    /// <summary>
+    /// The Web service allows us to access actors via proxy.
+    /// We register a proxy accessor for both TicketActor and AnimalActor here.
+    /// </summary>
     public class WebService : IDisposable
     {
+
+        private ActorSystem _system;
+
         public IActorRef TicketActor { get; }
         public IActorRef AnimalActor { get; }
 
+        //Creating a new WebService creates a new ActorSystem.
         public WebService(string actorSystemName, Config akkaConfig)
         {
             _system = ActorSystem.Create(actorSystemName, akkaConfig);
@@ -25,13 +33,16 @@ namespace Playground.Web
                 // Register custom cmd commands here             
                 cmd.Start();
             }
+
             DistributedPubSub.Get(_system);
-            
-            TicketActor = _system.ActorOf(ActorPaths.TicketCounterActor.ProxyProps(_system), ActorPaths.TicketCounterActor.Name + "Proxy");
+
+            //Singleton proxy for TicketActor
+            TicketActor = ActorPaths.TicketCounterActor.StartProxy(_system);
+
+            //Shard proxy for AnimalActor
             AnimalActor = ActorPaths.AnimalActors.StartProxy(_system);
         }       
-        
-        private ActorSystem _system;        
+     
         
         private void StopAsync()
         {

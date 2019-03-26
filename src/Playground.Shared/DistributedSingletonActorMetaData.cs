@@ -11,7 +11,23 @@ namespace Playground.Shared
         public DistributedSingletonActorMetaData(string name, Option<string> role) : base(name, role)
         {
         }
-        
+
+        public IActorRef StartProxy(ActorSystem system)
+        {
+            return system.ActorOf(
+                ProxyProps(system),
+                ProxyName(Name));
+        }
+
+
+        public IActorRef Start(ActorSystem system, Props actorProps)
+        {
+            return system.ActorOf(
+                ManagerProps(system, actorProps),
+                Name);
+        }
+
+
         public ClusterSingletonManagerSettings ManagerSettings(ActorSystem system)
         {
             var config = system.Settings.Config.GetConfig("akka.cluster.singleton");
@@ -43,6 +59,11 @@ namespace Playground.Shared
                 "/user/"+Name,
                  ProxySettings(system)
             );
+        }
+
+        public string ProxyName(string actorName)
+        {
+            return $"{actorName}Proxy";
         }
         
         public Props ManagerProps(ActorSystem system, Props childProps)

@@ -1,5 +1,8 @@
 namespace Playground.Protocol
 {
+    /// <summary>
+    /// Messages relating to TicketCounterActor
+    /// </summary>
     public static class TicketCounterProtocol
     {
         public class BuyTicket

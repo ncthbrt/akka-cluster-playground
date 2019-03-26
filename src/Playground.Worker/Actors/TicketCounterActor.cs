@@ -30,6 +30,7 @@ namespace Playground.Worker
             });
         }
 
+        //Because this is a singleton, we can use Props to initialize this actor completely.
         public static Props Props(int ticketCount) => 
             Akka.Actor.Props.Create(() => new TicketCounterActor(ticketCount));
     }
