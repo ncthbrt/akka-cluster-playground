@@ -13,6 +13,7 @@ namespace Playground.Web
     public class WebService : IDisposable
     {
         public IActorRef TicketActor { get; }
+        public IActorRef AnimalActor { get; }
 
         public WebService(string actorSystemName, Config akkaConfig)
         {
@@ -26,8 +27,8 @@ namespace Playground.Web
             }
             DistributedPubSub.Get(_system);
             
-            TicketActor = _system.ActorOf(ActorPaths.TicketCounterActor.ProxyProps(_system), ActorPaths.TicketCounterActor.Name + "Proxy");            
-
+            TicketActor = _system.ActorOf(ActorPaths.TicketCounterActor.ProxyProps(_system), ActorPaths.TicketCounterActor.Name + "Proxy");
+            AnimalActor = ActorPaths.AnimalActors.StartProxy(_system);
         }       
         
         private ActorSystem _system;        

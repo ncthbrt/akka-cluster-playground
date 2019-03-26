@@ -17,14 +17,14 @@ namespace Playground.Web.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetTickets()
+        public async Task<IActionResult> GetRemainingTicketCount()
         {
             var result = await _webService.TicketActor.Ask<RetrievedRemainingTicketCount>(new GetRemainingTicketCount(), TimeSpan.FromSeconds(10));
             return Ok(result);
         }
         
         [HttpPost]
-        public async Task<IActionResult> PostTickets()
+        public async Task<IActionResult> BuyTicket()
         {
             var result = await _webService.TicketActor.Ask<TicketPurchaseResult>(new BuyTicket(), TimeSpan.FromSeconds(10));
             if (result is TicketPurchased purchased)

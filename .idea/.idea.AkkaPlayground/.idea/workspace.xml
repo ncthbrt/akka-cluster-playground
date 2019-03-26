@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b00edf70-3276-4fa2-ab52-4ddf28662b5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Playground.Protocol/AnimalProtocol.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Protocol/EnclosureProtocol.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Shared/DistributedShardedActorMetaData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Shared/Domain/Animal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Shared/Domain/Enclosure.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Playground.Worker/Actors/AnimalActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AkkaPlayground/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AkkaPlayground/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AkkaPlayground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AkkaPlayground/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Playground.Web/Controllers/TicketsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Web/Controllers/TicketsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Web/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playground.Web/WebService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Web/WebService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,154 +27,178 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="494">
+              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding>
-                <marker date="1553593384386" expanded="false" signature="6:230" ph="..." />
-                <marker date="1553593384386" expanded="true" signature="259:1688" ph="{...}" />
-                <marker date="1553593384386" expanded="true" signature="292:1686" ph="{...}" />
-                <marker date="1553593384386" expanded="true" signature="504:610" ph="{...}" />
-                <marker date="1553593384386" expanded="true" signature="765:1304" ph="{...}" />
-                <marker date="1553593384386" expanded="true" signature="1340:1520" ph="{...}" />
-                <marker date="1553593384386" expanded="true" signature="1560:1680" ph="{...}" />
+                <marker date="1553096908181" expanded="false" signature="6:204" ph="..." />
+                <marker date="1553096908181" expanded="true" signature="233:1070" ph="{...}" />
+                <marker date="1553096908181" expanded="true" signature="260:1068" ph="{...}" />
+                <marker date="1553096908181" expanded="true" signature="319:1062" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Web/WebService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="7" column="113" selection-start-line="7" selection-start-column="113" selection-end-line="7" selection-end-column="113" />
+            <state relative-caret-position="492">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
-                <marker date="1553526209270" expanded="true" signature="55:412" ph="{...}" />
-                <marker date="1553526209270" expanded="true" signature="92:410" ph="{...}" />
+                <marker date="1553599575092" expanded="false" signature="6:244" ph="..." />
+                <marker date="1553599575092" expanded="true" signature="270:1584" ph="{...}" />
+                <marker date="1553599575092" expanded="true" signature="314:1582" ph="{...}" />
+                <marker date="1553599575092" expanded="true" signature="482:1221" ph="{...}" />
+                <marker date="1553599575092" expanded="true" signature="1324:1445" ph="{...}" />
+                <marker date="1553599575092" expanded="true" signature="1476:1576" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorRoles.cs">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/AnimalProtocol.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="2028">
+              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
               <folding>
-                <marker date="1553526195680" expanded="true" signature="29:188" ph="{...}" />
-                <marker date="1553526195680" expanded="true" signature="66:186" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="6:60" ph="..." />
+                <marker date="1553602410496" expanded="true" signature="91:2777" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="132:2775" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="209:555" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="274:302" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="363:545" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="425:502" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="600:686" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="742:1029" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="915:1019" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="1106:1139" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="1188:1381" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="1247:1316" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="1462:1507" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="1577:1829" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="1746:1807" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="1914:2156" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="2065:2134" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="2223:2456" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="2385:2446" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="2529:2769" ph="{...}" />
+                <marker date="1553602410496" expanded="true" signature="2698:2759" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedShardedActorMetaData.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding>
+                <marker date="1553597887105" expanded="true" signature="6:65" ph="..." />
+                <marker date="1553597887105" expanded="true" signature="94:1303" ph="{...}" />
+                <marker date="1553597887105" expanded="true" signature="217:1301" ph="{...}" />
+                <marker date="1553597887105" expanded="true" signature="323:355" ph="{...}" />
+                <marker date="1553597887105" expanded="true" signature="412:599" ph="{...}" />
+                <marker date="1553597887105" expanded="true" signature="677:945" ph="{...}" />
+                <marker date="1553597887105" expanded="true" signature="1057:1295" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Actors/AnimalActor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <marker date="1553602202206" expanded="true" signature="6:127" ph="..." />
+                <marker date="1553602202206" expanded="true" signature="156:1120" ph="{...}" />
+                <marker date="1553602202206" expanded="true" signature="202:1118" ph="{...}" />
+                <marker date="1553602202206" expanded="true" signature="304:976" ph="{...}" />
+                <marker date="1553602202206" expanded="true" signature="372:559" ph="{...}" />
+                <marker date="1553602202206" expanded="true" signature="800:964" ph="{...}" />
+                <marker date="1553602202206" expanded="true" signature="1014:1103" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/EnclosureProtocol.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <marker date="1553594272152" expanded="true" signature="29:96" ph="{...}" />
+                <marker date="1553594272152" expanded="true" signature="73:94" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2615D092-C8F9-4627-8720-26D3FBCB741A/3b/d5c62ef6/Passivate.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="626">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalsController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+              <folding>
+                <marker date="1553603013566" expanded="false" signature="6:160" ph="..." />
+                <marker date="1553603013566" expanded="true" signature="198:1932" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="276:1930" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="388:458" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="497:565" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="725:1305" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="946:1046" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="1098:1183" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="1200:1295" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="1414:1924" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="1614:1679" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="1739:1802" ph="{...}" />
+                <marker date="1553603013566" expanded="true" signature="1819:1914" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs">
+        <entry file="file://$PROJECT_DIR$/src/Playground.Web/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+            <state relative-caret-position="309">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding>
-                <marker date="1553593831125" expanded="true" signature="29:924" ph="{...}" />
-                <marker date="1553593831125" expanded="true" signature="77:922" ph="{...}" />
-                <marker date="1553593831125" expanded="true" signature="114:158" ph="{...}" />
-                <marker date="1553593831125" expanded="true" signature="281:504" ph="{...}" />
-                <marker date="1553593831125" expanded="true" signature="405:494" ph="{...}" />
-                <marker date="1553593831125" expanded="true" signature="572:592" ph="{...}" />
-                <marker date="1553593831125" expanded="true" signature="646:678" ph="{...}" />
-                <marker date="1553593831125" expanded="true" signature="738:916" ph="{...}" />
-                <marker date="1553593831125" expanded="true" signature="847:906" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Web/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Web/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding>
-                <marker date="1553521642747" expanded="false" signature="6:63" ph="..." />
-                <marker date="1553521642747" expanded="true" signature="89:447" ph="{...}" />
-                <marker date="1553521642747" expanded="true" signature="116:445" ph="{...}" />
-                <marker date="1553521642747" expanded="true" signature="169:243" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/TicketsController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-              <folding>
-                <marker date="1553593571733" expanded="false" signature="6:149" ph="..." />
-                <marker date="1553593571733" expanded="true" signature="187:1251" ph="{...}" />
-                <marker date="1553593571733" expanded="true" signature="265:1249" ph="{...}" />
-                <marker date="1553593571733" expanded="true" signature="377:447" ph="{...}" />
-                <marker date="1553593571733" expanded="true" signature="520:719" ph="{...}" />
-                <marker date="1553593571733" expanded="true" signature="802:1234" ph="{...}" />
-                <marker date="1553593571733" expanded="true" signature="990:1104" ph="{...}" />
-                <marker date="1553593571733" expanded="true" signature="1121:1212" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-              <folding>
-                <marker date="1553593374158" expanded="false" signature="6:116" ph="..." />
-                <marker date="1553593374158" expanded="true" signature="145:1129" ph="{...}" />
-                <marker date="1553593374158" expanded="true" signature="198:1127" ph="{...}" />
-                <marker date="1553593374158" expanded="true" signature="301:985" ph="{...}" />
-                <marker date="1553593374158" expanded="true" signature="400:530" ph="{...}" />
-                <marker date="1553593374158" expanded="true" signature="570:973" ph="{...}" />
-                <marker date="1553593374158" expanded="true" signature="623:722" ph="{...}" />
-                <marker date="1553593374158" expanded="true" signature="743:911" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <marker date="1553526556138" expanded="false" signature="6:86" ph="..." />
-                <marker date="1553526556138" expanded="true" signature="115:2066" ph="{...}" />
-                <marker date="1553526556138" expanded="true" signature="195:2064" ph="{...}" />
-                <marker date="1553526556138" expanded="true" signature="312:332" ph="{...}" />
-                <marker date="1553526556138" expanded="true" signature="424:966" ph="{...}" />
-                <marker date="1553526556138" expanded="true" signature="1046:1557" ph="{...}" />
-                <marker date="1553526556138" expanded="true" signature="1610:1787" ph="{...}" />
-                <marker date="1553526556138" expanded="true" signature="1868:2058" ph="{...}" />
+                <marker date="1553603395110" expanded="false" signature="6:342" ph="..." />
+                <marker date="1553603395110" expanded="true" signature="368:2566" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="395:2564" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="454:517" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="740:1766" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="1352:1754" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="1427:1524" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="1954:2558" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="2001:2078" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="2095:2298" ph="{...}" />
+                <marker date="1553603395110" expanded="true" signature="2441:2546" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -182,6 +216,8 @@
       <find>ToHash</find>
       <find>name</find>
       <find>min</find>
+      <find>StartProxy</find>
+      <find>Region</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,8 +230,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F9A6BF9-CC47-4E04-95B6-4187B8F17D2C/97/ca21f69b/IDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Shared/ConfigurationTemplating.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C9C705E6-7371-44B6-845F-D86D7EC2D731/3c/42f746b2/Environment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Shared/Domain/Enclosure.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Protocol/EnclosureProtocol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2FDDF0A-6DD5-4565-B4F4-110719FC1B14/76/81940242/Config.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Protocol/AnimalProtocol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Web/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/e8/f7beef52/String.cs" root0="SKIP_HIGHLIGHTING" />
@@ -203,15 +243,22 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D427BD81-0E62-4800-BB03-CA6159151982/03/efc9c0cc/Template.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Web/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/6d/e3ccbc21/ClusterSingletonManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Shared/Domain/Animal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2615D092-C8F9-4627-8720-26D3FBCB741A/3b/d5c62ef6/Passivate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/TicketsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFD2C1D5-1780-4780-B2FC-6E2F5EFB2149/ac/d342b74b/HttpStatusCode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/ea/97ac3c48/ClusterSingletonManagerSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/aa/decd0d65/DistributedPubSub.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/51AC4E32-6C60-4827-8158-C4A8DC5E08CE/eb/0eaaf1b5/Option`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Worker/Actors/AnimalActor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2615D092-C8F9-4627-8720-26D3FBCB741A/45/a55bb3ec/ClusterShardingSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/8e/eb1c69b4/ClusterSingletonProxySettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedShardedActorMetaData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2615D092-C8F9-4627-8720-26D3FBCB741A/5e/c62d805f/ClusterSharding.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/ef/3c9f8ca7/ClusterSingletonProxy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorRoles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32C7DA0B-DE3E-4433-B1FA-3A6000248638/7d/28515fbb/ServiceCollectionServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -227,7 +274,6 @@
         <option value="$PROJECT_DIR$/src/Playground.Protocol/Message.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/WorkerServicve.cs" />
         <option value="$PROJECT_DIR$/.dockerignore" />
-        <option value="$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Playground.Web/Dockerfile" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/Playground.Worker.csproj" />
@@ -237,38 +283,75 @@
         <option value="$PROJECT_DIR$/src/Playground.Shared/ActorMetaData.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Protocol/Playground.Protocol.csproj" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/Program.cs" />
-        <option value="$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalController.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/TicketCounter.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/TicketCounterActor.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Shared/Playground.Shared.csproj" />
         <option value="$PROJECT_DIR$/src/Playground.Shared/DistributedActorMetaData.cs" />
-        <option value="$PROJECT_DIR$/src/Playground.Web/Startup.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Web/Actors.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Web/Program.cs" />
-        <option value="$PROJECT_DIR$/src/Playground.Web/WebService.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/akka.conf" />
         <option value="$PROJECT_DIR$/src/Playground.Web/akka.conf" />
         <option value="$PROJECT_DIR$/src/Playground.Protocol/ActorRoles.cs" />
-        <option value="$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs" />
-        <option value="$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" />
-        <option value="$PROJECT_DIR$/src/Playground.Web/Controllers/TicketsController.cs" />
         <option value="$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Protocol/EnclosureProtocol.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Web/Controllers/TicketsController.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalController.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Shared/Domain/Enclosure.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Shared/DistributedShardedActorMetaData.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Web/WebService.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Shared/Domain/Animal.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Worker/Actors/AnimalActor.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Protocol/AnimalProtocol.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalsController.cs" />
+        <option value="$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj" />
+        <option value="$PROJECT_DIR$/src/Playground.Web/Startup.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="FileSystemExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AkkaPlayground" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AkkaPlayground" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AkkaPlayground" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Playground.Web" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AkkaPlayground" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Playground.Worker" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="FileSystemExplorer">
         <subPane>
           <expand>
@@ -286,6 +369,12 @@
               <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
               <item name="src" type="34e6ba20:FileSystemExplorerNode" />
               <item name="Playground.Protocol" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="AkkaTraining" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Playground.Shared" type="34e6ba20:FileSystemExplorerNode" />
             </path>
             <path>
               <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
@@ -317,36 +406,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="AkkaPlayground" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="AkkaPlayground" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="AkkaPlayground" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Playground.Web" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="AkkaPlayground" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Playground.Worker" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,11 +477,12 @@
       <workItem from="1553501293480" duration="14219000" />
       <workItem from="1553592745460" duration="240000" />
       <workItem from="1553593233422" duration="946000" />
+      <workItem from="1553594223190" duration="5496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30000000" />
+    <option name="totallyTimeSpent" value="35496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,10 +494,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16506922" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -449,14 +509,14 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.31991953" />
-      <window_info active="true" anchor="bottom" id="Docker" order="8" visible="true" weight="0.42857143" />
+      <window_info anchor="bottom" id="NuGet" order="7" visible="true" weight="0.3195021" />
+      <window_info anchor="bottom" id="Docker" order="8" weight="0.42842323" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="14" weight="0.32997987" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.32987553" />
       <window_info anchor="bottom" id="REST Client" order="15" />
       <window_info anchor="bottom" id="Stacktrace" order="16" weight="0.33299798" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -483,56 +543,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/docker-compose.yml" />
-    <entry file="file://$PROJECT_DIR$/AkkaPlayground.sln">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.dockerignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D427BD81-0E62-4800-BB03-CA6159151982/03/efc9c0cc/Template.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="287" column="18" selection-start-line="287" selection-start-column="18" selection-end-line="287" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F9A6BF9-CC47-4E04-95B6-4187B8F17D2C/97/ca21f69b/IDictionary.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D427BD81-0E62-4800-BB03-CA6159151982/32/192a764e/Hash.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="99" column="30" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C9C705E6-7371-44B6-845F-D86D7EC2D731/3c/42f746b2/Environment.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="37" column="85" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="18" column="106" selection-start-line="18" selection-start-column="106" selection-end-line="18" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/Controllers/ValuesController.cs" />
     <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/appsettings.Development.json" />
     <entry file="file://$PROJECT_DIR$/src/Playground.Web/thigns/appsettings.json" />
@@ -609,18 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedActorMetaData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <marker date="1553516294407" expanded="true" signature="47:348" ph="{...}" />
-            <marker date="1553516294407" expanded="true" signature="91:346" ph="{...}" />
-            <marker date="1553516294407" expanded="true" signature="252:322" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/8e/eb1c69b4/ClusterSingletonProxySettings.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -689,19 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <marker date="1553096908181" expanded="false" signature="6:204" ph="..." />
-            <marker date="1553096908181" expanded="true" signature="233:1070" ph="{...}" />
-            <marker date="1553096908181" expanded="true" signature="260:1068" ph="{...}" />
-            <marker date="1553096908181" expanded="true" signature="319:1062" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B43CED98-081F-47A2-BEE5-88FDC640C85F/6d/e3ccbc21/ClusterSingletonManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -716,49 +701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <marker date="1553096880160" expanded="false" signature="6:304" ph="..." />
-            <marker date="1553096880160" expanded="true" signature="330:1887" ph="{...}" />
-            <marker date="1553096880160" expanded="true" signature="357:1885" ph="{...}" />
-            <marker date="1553096880160" expanded="true" signature="416:479" ph="{...}" />
-            <marker date="1553096880160" expanded="true" signature="702:1271" ph="{...}" />
-            <marker date="1553096880160" expanded="true" signature="1459:1879" ph="{...}" />
-            <marker date="1553096880160" expanded="true" signature="1506:1583" ph="{...}" />
-            <marker date="1553096880160" expanded="true" signature="1600:1803" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/WebService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
-          <folding>
-            <marker date="1553525899620" expanded="false" signature="6:244" ph="..." />
-            <marker date="1553525899620" expanded="true" signature="270:1480" ph="{...}" />
-            <marker date="1553525899620" expanded="true" signature="314:1478" ph="{...}" />
-            <marker date="1553525899620" expanded="true" signature="436:1117" ph="{...}" />
-            <marker date="1553525899620" expanded="true" signature="1220:1341" ph="{...}" />
-            <marker date="1553525899620" expanded="true" signature="1372:1472" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Web/akka.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="26" column="23" selection-start-line="26" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -769,24 +715,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs">
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="7" column="113" selection-start-line="7" selection-start-column="113" selection-end-line="7" selection-end-column="113" />
-          <folding>
-            <marker date="1553526209270" expanded="true" signature="55:412" ph="{...}" />
-            <marker date="1553526209270" expanded="true" signature="92:410" ph="{...}" />
-          </folding>
+        <state relative-caret-position="858">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorRoles.cs">
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
-            <marker date="1553526195680" expanded="true" signature="29:188" ph="{...}" />
-            <marker date="1553526195680" expanded="true" signature="66:186" ph="{...}" />
+            <marker date="1553521642747" expanded="false" signature="6:63" ph="..." />
+            <marker date="1553521642747" expanded="true" signature="89:447" ph="{...}" />
+            <marker date="1553521642747" expanded="true" signature="116:445" ph="{...}" />
+            <marker date="1553521642747" expanded="true" signature="169:243" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -798,10 +742,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <marker date="1553593831125" expanded="true" signature="29:924" ph="{...}" />
+            <marker date="1553593831125" expanded="true" signature="77:922" ph="{...}" />
+            <marker date="1553593831125" expanded="true" signature="114:158" ph="{...}" />
+            <marker date="1553593831125" expanded="true" signature="281:504" ph="{...}" />
+            <marker date="1553593831125" expanded="true" signature="405:494" ph="{...}" />
+            <marker date="1553593831125" expanded="true" signature="572:592" ph="{...}" />
+            <marker date="1553593831125" expanded="true" signature="646:678" ph="{...}" />
+            <marker date="1553593831125" expanded="true" signature="738:916" ph="{...}" />
+            <marker date="1553593831125" expanded="true" signature="847:906" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/TicketsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1553594334145" expanded="false" signature="6:149" ph="..." />
+            <marker date="1553594334145" expanded="true" signature="187:1262" ph="{...}" />
+            <marker date="1553594334145" expanded="true" signature="265:1260" ph="{...}" />
+            <marker date="1553594334145" expanded="true" signature="377:447" ph="{...}" />
+            <marker date="1553594334145" expanded="true" signature="533:732" ph="{...}" />
+            <marker date="1553594334145" expanded="true" signature="813:1245" ph="{...}" />
+            <marker date="1553594334145" expanded="true" signature="1001:1115" ph="{...}" />
+            <marker date="1553594334145" expanded="true" signature="1132:1223" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedSingletonActorMetaData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="520">
+          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
           <folding>
             <marker date="1553526556138" expanded="false" signature="6:86" ph="..." />
             <marker date="1553526556138" expanded="true" signature="115:2066" ph="{...}" />
@@ -815,10 +794,159 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/Domain/Enclosure.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1553594782785" expanded="true" signature="34:377" ph="{...}" />
+            <marker date="1553594782785" expanded="true" signature="63:375" ph="{...}" />
+            <marker date="1553594782785" expanded="true" signature="252:369" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2615D092-C8F9-4627-8720-26D3FBCB741A/5e/c62d805f/ClusterSharding.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="477" column="21" selection-start-line="477" selection-start-column="21" selection-end-line="477" selection-end-column="21" />
+          <folding>
+            <marker date="1553596722728" expanded="true" signature="0:355" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1553596722728" expanded="false" signature="363:645" ph="..." />
+            <marker date="1553596722728" expanded="true" signature="678:66017" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="683:11291" ph="/// &lt;para&gt; ... " />
+            <marker date="1553596722728" expanded="true" signature="11335:66015" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="11733:11831" ph="///TBD ... " />
+            <marker date="1553596722728" expanded="true" signature="11889:11989" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="11995:12062" ph="///TBD ... " />
+            <marker date="1553596722728" expanded="true" signature="12117:13284" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="12656:13275" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="13290:13405" ph="/// Gets object representing settings for the current cluster sharding plugin. ... " />
+            <marker date="1553596722728" expanded="true" signature="13464:13562" ph="///Default HOCON settings for cluster sharding. ... " />
+            <marker date="1553596722728" expanded="true" signature="13603:13720" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="13726:16128" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="16404:17613" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="16461:17351" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="16835:17343" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="17362:17607" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="17619:20021" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="20314:21524" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="20371:21251" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="20738:21243" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="21262:21518" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="21530:23325" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="23517:23769" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="23775:25570" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="25773:26030" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="26036:27905" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="28143:28444" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="28450:30319" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="30568:30874" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="30880:32353" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="32511:32676" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="32682:34155" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="34324:34494" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="34500:36952" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="37249:38436" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="37306:38174" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="37658:38166" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="38185:38430" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="38442:40894" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="41208:42385" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="41265:42123" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="41610:42115" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="42134:42379" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="42391:44236" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="44449:44708" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="44714:46559" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="46783:47047" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="47053:48972" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="49231:49539" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="49545:51464" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="51734:52047" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="52053:53576" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="53755:53927" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="53933:55456" ph="/// Register a named entity type by defining the &lt;see cref=&quot;T:Akka.Actor.Props&quot; /&gt; of the entity actor and ... " />
+            <marker date="1553596722728" expanded="true" signature="55646:55823" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="55829:57212" ph="/// Register a named entity type `ShardRegion` on this node that will run in proxy only mode, i.e.it will ... " />
+            <marker date="1553596722728" expanded="true" signature="57363:58221" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="57768:58215" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="58227:59610" ph="/// Register a named entity type `ShardRegion` on this node that will run in proxy only mode, i.e.it will ... " />
+            <marker date="1553596722728" expanded="true" signature="59778:60575" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="60125:60569" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="60581:61640" ph="/// Register a named entity type `ShardRegion` on this node that will run in proxy only mode, i.e.it will ... " />
+            <marker date="1553596722728" expanded="true" signature="61757:61987" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="61993:63052" ph="/// Register a named entity type `ShardRegion` on this node that will run in proxy only mode, i.e.it will ... " />
+            <marker date="1553596722728" expanded="true" signature="63180:63415" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="63541:63643" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="63557:63637" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="63649:64333" ph="/// Retrieve the actor reference of the &lt;see cref=&quot;T:Akka.Cluster.Sharding.ShardRegion&quot; /&gt; actor responsible for  ... " />
+            <marker date="1553596722728" expanded="true" signature="64383:64671" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="64677:65375" ph="/// Retrieve the actor reference of the &lt;see cref=&quot;T:Akka.Cluster.Sharding.ShardRegion&quot; /&gt; actor that will act as ... " />
+            <marker date="1553596722728" expanded="true" signature="65430:65665" ph="{...}" />
+            <marker date="1553596722728" expanded="true" signature="65775:66011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2615D092-C8F9-4627-8720-26D3FBCB741A/45/a55bb3ec/ClusterShardingSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+          <folding>
+            <marker date="1553597579824" expanded="true" signature="0:363" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1553597579824" expanded="false" signature="371:458" ph="..." />
+            <marker date="1553597579824" expanded="true" signature="491:12451" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="622:12449" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="631:820" ph="/// Specifies that this entity type requires cluster nodes with a specific role. ... " />
+            <marker date="1553597579824" expanded="true" signature="858:1187" ph="/// True if active entity actors shall be automatically restarted upon &lt;see cref=&quot;T:Akka.Cluster.Sharding.Shard&quot;  ... " />
+            <marker date="1553597579824" expanded="true" signature="1235:1538" ph="/// Absolute path to the journal plugin configuration entity that is to be used for the internal ... " />
+            <marker date="1553597579824" expanded="true" signature="1587:1892" ph="/// Absolute path to the snapshot plugin configuration entity that is to be used for the internal persistence ... " />
+            <marker date="1553597579824" expanded="true" signature="1942:2319" ph="/// Passivate entities that have not received any message in this interval. ... " />
+            <marker date="1553597579824" expanded="true" signature="2430:2535" ph="/// Additional tuning parameters, see descriptions in reference.conf ... " />
+            <marker date="1553597579824" expanded="true" signature="2711:2895" ph="/// Create settings from the default configuration `akka.cluster.sharding`. ... " />
+            <marker date="1553597579824" expanded="true" signature="2964:3228" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="3234:3382" ph="///TBD ... " />
+            <marker date="1553597579824" expanded="true" signature="3483:5522" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="5528:5968" ph="///TBD ... " />
+            <marker date="1553597579824" expanded="true" signature="6302:6710" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="6716:6929" ph="/// If true, this node should run the shard region, otherwise just a shard proxy should started on this node. ... " />
+            <marker date="1553597579824" expanded="true" signature="6993:7122" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="7128:7224" ph="///TBD ... " />
+            <marker date="1553597579824" expanded="true" signature="7281:7520" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="7526:7634" ph="///TBD ... " />
+            <marker date="1553597579824" expanded="true" signature="7713:7929" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="7935:8042" ph="///TBD ... " />
+            <marker date="1553597579824" expanded="true" signature="8121:8339" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="8345:8453" ph="///TBD ... " />
+            <marker date="1553597579824" expanded="true" signature="8541:8760" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="8836:9040" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="9046:9338" ph="///TBD ... " />
+            <marker date="1553597579824" expanded="true" signature="9438:9844" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="9922:10130" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="10136:10450" ph="///TBD ... " />
+            <marker date="1553597579824" expanded="true" signature="10587:11023" ph="{...}" />
+            <marker date="1553597579824" expanded="true" signature="11417:12445" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/Domain/Animal.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding>
+            <marker date="1553600267416" expanded="true" signature="34:282" ph="{...}" />
+            <marker date="1553600267416" expanded="true" signature="60:280" ph="{...}" />
+            <marker date="1553600267416" expanded="true" signature="117:198" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Actors/TicketCounterActor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="728">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <marker date="1553593374158" expanded="false" signature="6:116" ph="..." />
             <marker date="1553593374158" expanded="true" signature="145:1129" ph="{...}" />
@@ -832,73 +960,217 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFD2C1D5-1780-4780-B2FC-6E2F5EFB2149/ac/d342b74b/HttpStatusCode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedActorMetaData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1553516294407" expanded="true" signature="47:348" ph="{...}" />
+            <marker date="1553516294407" expanded="true" signature="91:346" ph="{...}" />
+            <marker date="1553516294407" expanded="true" signature="252:322" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorRoles.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <marker date="1553526195680" expanded="true" signature="29:188" ph="{...}" />
+            <marker date="1553526195680" expanded="true" signature="66:186" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/ActorPaths.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="133" lean-forward="true" selection-start-line="10" selection-start-column="133" selection-end-line="10" selection-end-column="133" />
+          <folding>
+            <marker date="1553598451970" expanded="true" signature="55:664" ph="{...}" />
+            <marker date="1553598451970" expanded="true" signature="92:662" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Playground.Worker/WorkerService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="619">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding>
-            <marker date="1553593384386" expanded="false" signature="6:230" ph="..." />
-            <marker date="1553593384386" expanded="true" signature="259:1688" ph="{...}" />
-            <marker date="1553593384386" expanded="true" signature="292:1686" ph="{...}" />
-            <marker date="1553593384386" expanded="true" signature="504:610" ph="{...}" />
-            <marker date="1553593384386" expanded="true" signature="765:1304" ph="{...}" />
-            <marker date="1553593384386" expanded="true" signature="1340:1520" ph="{...}" />
-            <marker date="1553593384386" expanded="true" signature="1560:1680" ph="{...}" />
+            <marker date="1553599648694" expanded="false" signature="6:230" ph="..." />
+            <marker date="1553599648694" expanded="true" signature="259:1749" ph="{...}" />
+            <marker date="1553599648694" expanded="true" signature="292:1747" ph="{...}" />
+            <marker date="1553599648694" expanded="true" signature="504:610" ph="{...}" />
+            <marker date="1553599648694" expanded="true" signature="765:1304" ph="{...}" />
+            <marker date="1553599648694" expanded="true" signature="1340:1581" ph="{...}" />
+            <marker date="1553599648694" expanded="true" signature="1621:1741" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="494">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
-            <marker date="1553521642747" expanded="false" signature="6:63" ph="..." />
-            <marker date="1553521642747" expanded="true" signature="89:447" ph="{...}" />
-            <marker date="1553521642747" expanded="true" signature="116:445" ph="{...}" />
-            <marker date="1553521642747" expanded="true" signature="169:243" ph="{...}" />
+            <marker date="1553096908181" expanded="false" signature="6:204" ph="..." />
+            <marker date="1553096908181" expanded="true" signature="233:1070" ph="{...}" />
+            <marker date="1553096908181" expanded="true" signature="260:1068" ph="{...}" />
+            <marker date="1553096908181" expanded="true" signature="319:1062" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/TicketsController.cs">
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/WebService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="492">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <marker date="1553593571733" expanded="false" signature="6:149" ph="..." />
-            <marker date="1553593571733" expanded="true" signature="187:1251" ph="{...}" />
-            <marker date="1553593571733" expanded="true" signature="265:1249" ph="{...}" />
-            <marker date="1553593571733" expanded="true" signature="377:447" ph="{...}" />
-            <marker date="1553593571733" expanded="true" signature="520:719" ph="{...}" />
-            <marker date="1553593571733" expanded="true" signature="802:1234" ph="{...}" />
-            <marker date="1553593571733" expanded="true" signature="990:1104" ph="{...}" />
-            <marker date="1553593571733" expanded="true" signature="1121:1212" ph="{...}" />
+            <marker date="1553599575092" expanded="false" signature="6:244" ph="..." />
+            <marker date="1553599575092" expanded="true" signature="270:1584" ph="{...}" />
+            <marker date="1553599575092" expanded="true" signature="314:1582" ph="{...}" />
+            <marker date="1553599575092" expanded="true" signature="482:1221" ph="{...}" />
+            <marker date="1553599575092" expanded="true" signature="1324:1445" ph="{...}" />
+            <marker date="1553599575092" expanded="true" signature="1476:1576" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/TicketCounterProtocol.cs">
+    <entry file="file://$PROJECT_DIR$/src/Playground.Shared/DistributedShardedActorMetaData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        <state relative-caret-position="315">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
-            <marker date="1553593831125" expanded="true" signature="29:924" ph="{...}" />
-            <marker date="1553593831125" expanded="true" signature="77:922" ph="{...}" />
-            <marker date="1553593831125" expanded="true" signature="114:158" ph="{...}" />
-            <marker date="1553593831125" expanded="true" signature="281:504" ph="{...}" />
-            <marker date="1553593831125" expanded="true" signature="405:494" ph="{...}" />
-            <marker date="1553593831125" expanded="true" signature="572:592" ph="{...}" />
-            <marker date="1553593831125" expanded="true" signature="646:678" ph="{...}" />
-            <marker date="1553593831125" expanded="true" signature="738:916" ph="{...}" />
-            <marker date="1553593831125" expanded="true" signature="847:906" ph="{...}" />
+            <marker date="1553597887105" expanded="true" signature="6:65" ph="..." />
+            <marker date="1553597887105" expanded="true" signature="94:1303" ph="{...}" />
+            <marker date="1553597887105" expanded="true" signature="217:1301" ph="{...}" />
+            <marker date="1553597887105" expanded="true" signature="323:355" ph="{...}" />
+            <marker date="1553597887105" expanded="true" signature="412:599" ph="{...}" />
+            <marker date="1553597887105" expanded="true" signature="677:945" ph="{...}" />
+            <marker date="1553597887105" expanded="true" signature="1057:1295" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2615D092-C8F9-4627-8720-26D3FBCB741A/3b/d5c62ef6/Passivate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/EnclosureProtocol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <marker date="1553594272152" expanded="true" signature="29:96" ph="{...}" />
+            <marker date="1553594272152" expanded="true" signature="73:94" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Worker/Actors/AnimalActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1553602202206" expanded="true" signature="6:127" ph="..." />
+            <marker date="1553602202206" expanded="true" signature="156:1120" ph="{...}" />
+            <marker date="1553602202206" expanded="true" signature="202:1118" ph="{...}" />
+            <marker date="1553602202206" expanded="true" signature="304:976" ph="{...}" />
+            <marker date="1553602202206" expanded="true" signature="372:559" ph="{...}" />
+            <marker date="1553602202206" expanded="true" signature="800:964" ph="{...}" />
+            <marker date="1553602202206" expanded="true" signature="1014:1103" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Protocol/AnimalProtocol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2028">
+          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+          <folding>
+            <marker date="1553602410496" expanded="true" signature="6:60" ph="..." />
+            <marker date="1553602410496" expanded="true" signature="91:2777" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="132:2775" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="209:555" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="274:302" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="363:545" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="425:502" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="600:686" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="742:1029" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="915:1019" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="1106:1139" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="1188:1381" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="1247:1316" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="1462:1507" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="1577:1829" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="1746:1807" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="1914:2156" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="2065:2134" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="2223:2456" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="2385:2446" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="2529:2769" ph="{...}" />
+            <marker date="1553602410496" expanded="true" signature="2698:2759" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Controllers/AnimalsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <marker date="1553603013566" expanded="false" signature="6:160" ph="..." />
+            <marker date="1553603013566" expanded="true" signature="198:1932" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="276:1930" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="388:458" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="497:565" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="725:1305" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="946:1046" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="1098:1183" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="1200:1295" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="1414:1924" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="1614:1679" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="1739:1802" ph="{...}" />
+            <marker date="1553603013566" expanded="true" signature="1819:1914" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Playground.Web.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Playground.Web/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding>
+            <marker date="1553603395110" expanded="false" signature="6:342" ph="..." />
+            <marker date="1553603395110" expanded="true" signature="368:2566" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="395:2564" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="454:517" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="740:1766" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="1352:1754" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="1427:1524" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="1954:2558" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="2001:2078" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="2095:2298" ph="{...}" />
+            <marker date="1553603395110" expanded="true" signature="2441:2546" ph="{...}" />
           </folding>
         </state>
       </provider>
