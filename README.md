@@ -16,4 +16,21 @@ Alternatively if you prefer to use the terminal, you can start this project by c
 project root directory, and likewise `docker-compose down` to stop the environment.
 
 ## The Project
-Playground.Web is a Aspnet Core REST API. It uses the cluster client to communicate with the worker nodes.
+Playground.Web is a Aspnet Core REST API. To view the available API endpoints, browse to http://localhost:5050/swagger
+while your solution is running. 
+
+The Web API communicates with the Worker node which is in a clustered configuration. This example has two different 
+types of Clustered Actors, a example of a ClusterSingletonActor (`TicketCounterActor.cs`) and a type of 
+ClusterShardedActor (`AnimalActor.cs`).
+
+The manner in which the actors start up is controlled by the Cluster extension, with the actors being registered with 
+the system in the worker node in `WorkerService.cs`, and are referenced in the Api via actor proxy which is started in
+`WebService.cs`. The controllers use these proxies to send messages to the actual actors in the worker node. 
+
+Of note in both `WebService` and `WorkerService` is the use of graceful shutdown, which ensures that a node is gracefully
+stopped, leading to a more reliable system. 
+
+This project implements some patterns to reduce likelihood of typo which follows in the vein of Petabridge's `ActorMetaData`
+pattern. Refer to `DistributedSingletonActorMetaData`, `DistributedShardedActorMetaData` and `ActorPaths` for more details.
+
+
