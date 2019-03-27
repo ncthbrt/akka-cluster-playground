@@ -8,7 +8,7 @@ file, and an instance of Petabridge Lighthouse, which is a dedicated seed node f
 To get started, please make sure you have the latest version of Docker installed on your machine.
 
 If you are on Jetbrains Rider, it is helpful to have the Docker tools installed. 
-If you are on Visual Studio, ensure that you have the latest container tools installed, and if you run into any problems,
+If you are on Visual Studio, ensure that you have the latest container tools installed. You will need to right-click and set docker-compose.yml as the startup project. If you run into any problems,
 you can consult this [troubleshooting guide](https://docs.microsoft.com/en-us/visualstudio/containers/vs-azure-tools-docker-troubleshooting-docker-errors?view=vs-2017)
 Using either of these two IDEs should allow you to simply click Start and have this clustered environment running.  
 
