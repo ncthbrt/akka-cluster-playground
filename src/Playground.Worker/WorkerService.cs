@@ -56,7 +56,7 @@ namespace Playground.Worker
 
         private async void StopAsync()
         {
-            await CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance);
+           // await CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance);
         }
     }
 }
