@@ -2,8 +2,8 @@
 
 ## Set-up
 This repository contains a docker-compose playground designed for learning Akka.Net Clustering techniques.
-The application has a WebApi node, two identical worker nodes (you could add more if you wanted), just modify the compose
-file, and an instance of Petabridge Lighthouse, which is a dedicated seed node for the akka cluster.
+The application has a WebApi node, two identical worker nodes, and an instance of Petabridge Lighthouse, which is a dedicated seed node for the akka cluster.
+You could add more worker nodes if you wanted, just modify the compose file.
 
 To get started, please make sure you have the latest version of Docker installed on your machine.
 

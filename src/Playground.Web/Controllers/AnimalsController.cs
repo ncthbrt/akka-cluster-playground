@@ -1,8 +1,8 @@
+using Akka.Actor;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using Akka.Actor;
-using Microsoft.AspNetCore.Mvc;
 using static Playground.Protocol.AnimalProtocol;
 
 namespace Playground.Web.Controllers
@@ -14,14 +14,21 @@ namespace Playground.Web.Controllers
 
         public AnimalsController(WebService webService)
         {
-            _webService = webService;            
+            _webService = webService;
         }
 
         public class AnimalInputModel
         {
             public string Species { get; set; }
         }
-        
+
+        /// <summary>
+        /// Add a new Animal to the Zoo. The json body requires a species.
+        /// <see cref="AnimalInputModel"/>
+        /// </summary>
+        /// <param name="animalName"></param>
+        /// <param name="animalInputModel"></param>
+        /// <returns></returns>
         [HttpPost("{animalName}")]
         public async Task<IActionResult> AddAnimal(string animalName, [FromBody] AnimalInputModel animalInputModel)
         {
@@ -29,7 +36,7 @@ namespace Playground.Web.Controllers
             if (result is AnimalAdded a)
             {
                 return Created($"/api/animals/{animalName}", a.Animal);
-            } 
+            }
             else if (result is AnimalAlreadyAdded)
             {
                 return Conflict("Animal already added");
@@ -40,6 +47,11 @@ namespace Playground.Web.Controllers
             }
         }
 
+        /// <summary>
+        /// Locate a previously added animal by name.
+        /// </summary>
+        /// <param name="animalName"></param>
+        /// <returns></returns>
         [HttpGet("{animalName}")]
         public async Task<IActionResult> TryFindAnimal(string animalName)
         {
@@ -47,7 +59,7 @@ namespace Playground.Web.Controllers
             if (result is FoundAnimalResponse a)
             {
                 return Ok(a.Animal);
-            } 
+            }
             else if (result is CouldNotFindAnimalResponse)
             {
                 return NotFound();

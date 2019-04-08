@@ -10,9 +10,13 @@ namespace Playground.Web.Controllers
 
         public VisitorsController(WebService webService)
         {
-            _webService = webService;            
+            _webService = webService;
         }
 
+        /// <summary>
+        /// Get visitors - not implemented.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetVisitors()
         {

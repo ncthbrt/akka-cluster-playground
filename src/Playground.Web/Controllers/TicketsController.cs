@@ -1,7 +1,7 @@
-using System;
-using System.Threading.Tasks;
 using Akka.Actor;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 using static Playground.Protocol.TicketCounterProtocol;
 
 namespace Playground.Web.Controllers
@@ -13,16 +13,24 @@ namespace Playground.Web.Controllers
 
         public TicketsController(WebService webService)
         {
-            _webService = webService;            
+            _webService = webService;
         }
 
+        /// <summary>
+        /// Get remaining tickets for sale.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetRemainingTicketCount()
         {
             var result = await _webService.TicketActor.Ask<RetrievedRemainingTicketCount>(new GetRemainingTicketCount(), TimeSpan.FromSeconds(10));
             return Ok(result);
         }
-        
+
+        /// <summary>
+        /// Buy one ticket.
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> BuyTicket()
         {
@@ -33,9 +41,8 @@ namespace Playground.Web.Controllers
             }
             else
             {
-                return BadRequest("No tickets remaining");    
-            }            
+                return BadRequest("No tickets remaining");
+            }
         }
-        
     }
 }
