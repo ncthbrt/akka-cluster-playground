@@ -1,4 +1,3 @@
-using Akka.Cluster.Sharding;
 using Playground.Shared.Domain;
 
 namespace Playground.Protocol
@@ -8,27 +7,11 @@ namespace Playground.Protocol
     /// </summary>
     public static class AnimalProtocol
     {
-        public class AnimalMessageExtractor : HashCodeMessageExtractor
-        {
-            public AnimalMessageExtractor() : base(10)
-            {
-            }
-
-            public override string EntityId(object message)
-            {
-                if (message is AnimalMessage a)
-                {
-                    return a.AnimalName;
-                }
-                return null;
-            }
-        }
-
         public abstract class AnimalMessage
         {
-            public abstract string AnimalName { get; }           
+            public abstract string AnimalName { get; }
         }
-        
+
         public class AddAnimal : AnimalMessage
         {
             public override string AnimalName { get; }
@@ -43,7 +26,6 @@ namespace Playground.Protocol
 
         public abstract class AnimalCreationResponseMessage : AnimalMessage
         {
-            
         }
 
         public class FindAnimal : AnimalMessage
@@ -52,12 +34,12 @@ namespace Playground.Protocol
             {
                 AnimalName = animalName;
             }
+
             public override string AnimalName { get; }
         }
-        
+
         public abstract class FindAnimalResponseMessage : AnimalMessage
-        {            
-            
+        {
         }
 
         public class FoundAnimalResponse : FindAnimalResponseMessage
@@ -68,23 +50,22 @@ namespace Playground.Protocol
             public FoundAnimalResponse(Animal animal)
             {
                 Animal = animal;
-            }            
+            }
         }
-        
+
         public class CouldNotFindAnimalResponse : FindAnimalResponseMessage
         {
-            public override string AnimalName { get; }                    
+            public override string AnimalName { get; }
 
             public CouldNotFindAnimalResponse(string animalName)
             {
                 AnimalName = animalName;
-            }            
+            }
         }
-
 
         public class AnimalAdded : AnimalCreationResponseMessage
         {
-            public override string AnimalName => Animal.Name; 
+            public override string AnimalName => Animal.Name;
             public Animal Animal { get; }
 
             public AnimalAdded(Animal animal)
@@ -95,7 +76,7 @@ namespace Playground.Protocol
 
         public class AnimalAlreadyAdded : AnimalCreationResponseMessage
         {
-            public override string AnimalName => Animal.Name; 
+            public override string AnimalName => Animal.Name;
             public Animal Animal { get; }
 
             public AnimalAlreadyAdded(Animal animal)
