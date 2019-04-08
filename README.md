@@ -90,7 +90,7 @@ b) Add another lighthouse and add it to the seed node. Make sure they start in t
 
 ### Exercise 4: Topology changes
 
-This last exercise involves putting several of the previous pieces together to see how changes can affect the system topology.
+This last exercise involves putting several of the previous pieces together to see how changes can affect the system topology. Note that autodowning is not necessarily recommended practice, but this exercise will illustrate how it all works. See https://getakka.net/articles/clustering/split-brain-resolver.html for a preferred alternative.
 
 a) Stop one of the containers with docker stop <containername>.
 
