@@ -1,5 +1,9 @@
+using Akka.Actor;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Net;
 using System.Threading.Tasks;
+using static Playground.Protocol.VisitorProtocol;
 
 namespace Playground.Web.Controllers
 {
@@ -14,13 +18,52 @@ namespace Playground.Web.Controllers
         }
 
         /// <summary>
-        /// Get visitors - not implemented.
+        /// Add a new Visitor to the Zoo.
+        /// <see cref="AnimalInputModel"/>
         /// </summary>
+        /// <param name="visitorName"></param>
         /// <returns></returns>
-        [HttpGet]
-        public async Task<IActionResult> GetVisitors()
+        [HttpPost("{visitorName}")]
+        public async Task<IActionResult> AddVisitor(string visitorName)
         {
-            return Ok();
+            var result = await _webService.VisitorActor.Ask<VisitorCreationResponseMessage>(
+                new AddVisitor(visitorName), TimeSpan.FromSeconds(10));
+
+            if (result is VisitorAdded v)
+            {
+                return Created($"/api/visitors/{visitorName}", v);
+            }
+            else if (result is VisitorAlreadyAdded)
+            {
+                return Conflict("Visitor already added");
+            }
+            else
+            {
+                return StatusCode((int)HttpStatusCode.BadGateway);
+            }
+        }
+
+        /// <summary>
+        /// Locate a previously added visitor by name.
+        /// </summary>
+        /// <param name="visitorName"></param>
+        /// <returns></returns>
+        [HttpGet("{visitorName}")]
+        public async Task<IActionResult> TryFindVisitor(string visitorName)
+        {
+            var result = await _webService.VisitorActor.Ask<FindVisitorResponseMessage>(new FindVisitor(visitorName), TimeSpan.FromSeconds(10));
+            if (result is FoundVisitorResponse v)
+            {
+                return Ok(v);
+            }
+            else if (result is CouldNotFindVisitorResponse)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return StatusCode((int)HttpStatusCode.BadGateway);
+            }
         }
     }
 }

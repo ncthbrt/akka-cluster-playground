@@ -9,5 +9,8 @@ namespace Playground.Protocol
 
         public static readonly DistributedShardedActorMetaData<AnimalMessageExtractor> AnimalActors =
             new DistributedShardedActorMetaData<AnimalMessageExtractor>("animals", ActorRoles.Worker);
+
+        public static readonly DistributedShardedActorMetaData<VisitorMessageExtractor> VisitorActor =
+            new DistributedShardedActorMetaData<VisitorMessageExtractor>("visitors", ActorRoles.Worker);
     }
 }

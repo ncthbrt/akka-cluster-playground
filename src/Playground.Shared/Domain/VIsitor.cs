@@ -8,10 +8,13 @@ namespace Playground.Shared.Domain
     {
         public string Name { get; }
 
-        public Visitor(string name)
+        public bool HasTicket { get; }
+
+        public Visitor(string name, bool hasTicket = true)
 
         {
             Name = name;
+            HasTicket = hasTicket;
         }
     }
 }

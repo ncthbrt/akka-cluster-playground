@@ -1,11 +1,11 @@
-using System.Threading;
-using System.Threading.Tasks;
 using Akka.Actor;
 using Akka.Cluster.Tools.PublishSubscribe;
 using Akka.Cluster.Tools.Singleton;
 using Akka.Configuration;
 using Petabridge.Cmd.Host;
 using Playground.Protocol;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Playground.Worker
 {
@@ -15,7 +15,6 @@ namespace Playground.Worker
     public class WorkerService
     {
         private readonly string _actorSystemName;
-        private IActorRef _singleton;
         private readonly Config _akkaConfig;
 
         public WorkerService(string actorSystemName, Config akkaConfig)
@@ -27,6 +26,8 @@ namespace Playground.Worker
         private ActorSystem _system;
         public Task TerminationHandle => _system.WhenTerminated;
 
+        public static IActorRef TicketCounter;
+
         //Creating a new WorkerService creates a new ActorSystem.
         public void Start(CancellationToken token)
         {
@@ -35,7 +36,7 @@ namespace Playground.Worker
             var cmd = PetabridgeCmd.Get(_system);
             cmd.RegisterCommandPalette(Petabridge.Cmd.Cluster.ClusterCommands.Instance);
             cmd.RegisterCommandPalette(Petabridge.Cmd.Cluster.Sharding.ClusterShardingCommands.Instance);
-            // Register custom cmd commands here             
+            // Register custom cmd commands here
             cmd.Start();
 
             DistributedPubSub.Get(_system);
@@ -52,11 +53,15 @@ namespace Playground.Worker
 
             //Start a sharded actor definition.
             ActorPaths.AnimalActors.Start(_system, AnimalActor.Props());
+
+            ActorPaths.VisitorActor.Start(_system, VisitorActor.Props());
+
+            TicketCounter = ActorPaths.TicketCounterActor.StartProxy(_system);
         }
 
         private async void StopAsync()
         {
-           // await CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance);
+            await CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance);
         }
     }
 }
