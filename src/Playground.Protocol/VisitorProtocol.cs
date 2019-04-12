@@ -8,9 +8,26 @@ namespace Playground.Protocol
         {
             public string Name { get; private set; }
 
-            public VisitorMessage(string name)
+            public bool HasTicket { get; private set; }
+
+            public VisitorMessage(Visitor visitor)
+            {
+                if (visitor is null)
+                {
+                    Name = "";
+                    HasTicket = false;
+                }
+                else
+                {
+                    Name = visitor.Name;
+                    HasTicket = visitor.HasTicket;
+                }
+            }
+
+            public VisitorMessage(string name, bool hasTicket = true)
             {
                 Name = name;
+                HasTicket = hasTicket;
             }
         }
 
@@ -24,8 +41,8 @@ namespace Playground.Protocol
 
         public abstract class VisitorCreationResponseMessage : VisitorMessage
         {
-            public VisitorCreationResponseMessage(string name)
-                : base(name)
+            public VisitorCreationResponseMessage(Visitor visitor)
+                : base(visitor)
             {
             }
         }
@@ -44,12 +61,17 @@ namespace Playground.Protocol
                 : base(name)
             {
             }
+
+            public FindVisitorResponseMessage(Visitor visitor)
+                : base(visitor)
+            {
+            }
         }
 
         public class FoundVisitorResponse : FindVisitorResponseMessage
         {
             public FoundVisitorResponse(Visitor visitor)
-                : base(visitor.Name)
+                : base(visitor)
             {
             }
         }
@@ -64,16 +86,16 @@ namespace Playground.Protocol
 
         public class VisitorAdded : VisitorCreationResponseMessage
         {
-            public VisitorAdded(string name)
-                : base(name)
+            public VisitorAdded(Visitor visitor)
+                : base(visitor)
             {
             }
         }
 
         public class VisitorAlreadyAdded : VisitorCreationResponseMessage
         {
-            public VisitorAlreadyAdded(string name)
-                : base(name)
+            public VisitorAlreadyAdded(Visitor visitor)
+                : base(visitor)
             {
             }
         }

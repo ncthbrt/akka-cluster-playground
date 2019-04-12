@@ -1,8 +1,9 @@
-using System;
 using Akka.Actor;
 using Akka.Cluster.Tools.PublishSubscribe;
 using Akka.Configuration;
+using Petabridge.Cmd.Host;
 using Playground.Protocol;
+using System;
 
 namespace Playground.Web
 {
@@ -12,13 +13,21 @@ namespace Playground.Web
     /// </summary>
     public class WebService : IDisposable
     {
-
         private ActorSystem _system;
 
+        /// <summary>
+        /// Reference To Ticket Singleton Proxy
+        /// </summary>
         public IActorRef TicketActor { get; }
+
+        /// <summary>
+        /// Reference to Animal Shard Proxy
+        /// </summary>
         public IActorRef AnimalActor { get; }
 
-        //Creating a new WebService creates a new ActorSystem.
+        /// <summary>
+        ///  Creating a new WebService creates a new ActorSystem.
+        /// </summary>
         public WebService(string actorSystemName, Config akkaConfig)
         {
             _system = ActorSystem.Create(actorSystemName, akkaConfig);
@@ -30,18 +39,20 @@ namespace Playground.Web
 
             //Shard proxy for AnimalActor
             AnimalActor = ActorPaths.AnimalActors.StartProxy(_system);
-        }       
-     
-        
+        }
+
         private void StopAsync()
         {
             CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance).Wait();
         }
 
+        /// <summary>
+        /// Disposes the actorSystem!
+        /// </summary>
         public void Dispose()
         {
             Console.WriteLine("STOPPING");
-            StopAsync();            
+            StopAsync();
         }
     }
 }
