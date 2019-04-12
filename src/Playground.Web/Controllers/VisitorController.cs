@@ -7,11 +7,18 @@ using static Playground.Protocol.VisitorProtocol;
 
 namespace Playground.Web.Controllers
 {
+    /// <summary>
+    /// Visitors to the zoo should require a ticket to enter!
+    /// </summary>
     [Route("/api/visitors")]
     public class VisitorsController : Controller
     {
         private readonly WebService _webService;
 
+        /// <summary>
+        /// Visitors Controller
+        /// </summary>
+        /// <param name="webService"></param>
         public VisitorsController(WebService webService)
         {
             _webService = webService;
@@ -19,28 +26,13 @@ namespace Playground.Web.Controllers
 
         /// <summary>
         /// Add a new Visitor to the Zoo.
-        /// <see cref="AnimalInputModel"/>
         /// </summary>
         /// <param name="visitorName"></param>
         /// <returns></returns>
         [HttpPost("{visitorName}")]
         public async Task<IActionResult> AddVisitor(string visitorName)
         {
-            var result = await _webService.VisitorActor.Ask<VisitorCreationResponseMessage>(
-                new AddVisitor(visitorName), TimeSpan.FromSeconds(10));
-
-            if (result is VisitorAdded v)
-            {
-                return Created($"/api/visitors/{visitorName}", v);
-            }
-            else if (result is VisitorAlreadyAdded)
-            {
-                return Conflict("Visitor already added");
-            }
-            else
-            {
-                return StatusCode((int)HttpStatusCode.BadGateway);
-            }
+            return StatusCode((int)HttpStatusCode.NotImplemented);
         }
 
         /// <summary>
@@ -51,19 +43,7 @@ namespace Playground.Web.Controllers
         [HttpGet("{visitorName}")]
         public async Task<IActionResult> TryFindVisitor(string visitorName)
         {
-            var result = await _webService.VisitorActor.Ask<FindVisitorResponseMessage>(new FindVisitor(visitorName), TimeSpan.FromSeconds(10));
-            if (result is FoundVisitorResponse v)
-            {
-                return Ok(v);
-            }
-            else if (result is CouldNotFindVisitorResponse)
-            {
-                return NotFound();
-            }
-            else
-            {
-                return StatusCode((int)HttpStatusCode.BadGateway);
-            }
+            return StatusCode((int)HttpStatusCode.NotImplemented);
         }
     }
 }

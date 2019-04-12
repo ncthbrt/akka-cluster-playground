@@ -15,21 +15,22 @@ namespace Playground.Web
     {
         private ActorSystem _system;
 
+        /// <summary>
+        /// Reference To Ticket Singleton Proxy
+        /// </summary>
         public IActorRef TicketActor { get; }
+
+        /// <summary>
+        /// Reference to Animal Shard Proxy
+        /// </summary>
         public IActorRef AnimalActor { get; }
 
-        public IActorRef VisitorActor { get; }
-
-        //Creating a new WebService creates a new ActorSystem.
+        /// <summary>
+        ///  Creating a new WebService creates a new ActorSystem.
+        /// </summary>
         public WebService(string actorSystemName, Config akkaConfig)
         {
             _system = ActorSystem.Create(actorSystemName, akkaConfig);
-
-            var cmd = PetabridgeCmd.Get(_system);
-            cmd.RegisterCommandPalette(Petabridge.Cmd.Cluster.ClusterCommands.Instance);
-            cmd.RegisterCommandPalette(Petabridge.Cmd.Cluster.Sharding.ClusterShardingCommands.Instance);
-            // Register custom cmd commands here
-            cmd.Start();
 
             DistributedPubSub.Get(_system);
 
@@ -38,8 +39,6 @@ namespace Playground.Web
 
             //Shard proxy for AnimalActor
             AnimalActor = ActorPaths.AnimalActors.StartProxy(_system);
-
-            VisitorActor = ActorPaths.VisitorActor.StartProxy(_system);
         }
 
         private void StopAsync()
@@ -47,6 +46,9 @@ namespace Playground.Web
             CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance).Wait();
         }
 
+        /// <summary>
+        /// Disposes the actorSystem!
+        /// </summary>
         public void Dispose()
         {
             Console.WriteLine("STOPPING");

@@ -53,15 +53,11 @@ namespace Playground.Worker
 
             //Start a sharded actor definition.
             ActorPaths.AnimalActors.Start(_system, AnimalActor.Props());
-
-            ActorPaths.VisitorActor.Start(_system, VisitorActor.Props());
-
-            TicketCounter = ActorPaths.TicketCounterActor.StartProxy(_system);
         }
 
         private async void StopAsync()
         {
-            await CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance);
+            //await CoordinatedShutdown.Get(_system).Run(CoordinatedShutdown.ClrExitReason.Instance);
         }
     }
 }

@@ -1,6 +1,6 @@
 version: '3.4'
 services:
-  lighthouse.1:
+  lighthouse:
     image: petabridge/lighthouse:v0.9.2
     ports:
       # Port 9110 is exposed so as to allow the Petrabridge.cmd client (https://cmd.petabridge.com/)
@@ -10,22 +10,9 @@ services:
     environment:
       ACTORSYSTEM: "playground"
       # The cluster IP (bit of a misnomer, here it's the hostname) is derived from the service name (lighthouse)
-      CLUSTER_IP: lighthouse.1
+      CLUSTER_IP: lighthouse
       CLUSTER_PORT: 4053
-      CLUSTER_SEEDS: "akka.tcp://playground@lighthouse.1:4053,akka.tcp://playground@lighthouse.2:4053"
-  lighthouse.2:
-    image: petabridge/lighthouse:v0.9.2
-    ports:
-    # Map port 9110 to 9111. Port 9111 is used to connect to Petabridge.cmd for this node
-      - '9115:9110'
-    depends_on:
-    - lighthouse.1
-    environment:
-      ACTORSYSTEM: "playground"
-      # The cluster IP (bit of a misnomer, here it's the hostname) is derived from the service name (lighthouse)
-      CLUSTER_IP: lighthouse.2
-      CLUSTER_PORT: 4053
-      CLUSTER_SEEDS: "akka.tcp://playground@lighthouse.1:4053,akka.tcp://playground@lighthouse.2:4053"
+      CLUSTER_SEEDS: "akka.tcp://playground@lighthouse:4053"
   playground.web:
     # Injected by visual studio, which messes with the image
     image: ${DOCKER_REGISTRY-}playgroundweb
@@ -41,7 +28,7 @@ services:
     depends_on:
       - playground.worker.1
       - playground.worker.2
-      - lighthouse.2
+      - lighthouse
     environment:
       ASPNETCORE_ENVIRONMENT: local
       CLUSTER_IP: playground.web
@@ -57,7 +44,7 @@ services:
       # Map port 9110 to 9112. Port 9112 is used to connect to Petabridge.cmd for this node
       - '9112:9110'
     depends_on:      
-      - lighthouse.2
+      - lighthouse
     environment:
       ASPNETCORE_ENVIRONMENT: local
       CLUSTER_IP: playground.worker.1
@@ -73,24 +60,8 @@ services:
       # Map port 9110 to 9112. Port 9112 is used to connect to Petabridge.cmd for this node
       - '9113:9110'
     depends_on:
-      - lighthouse.2
+      - lighthouse
     environment:
       ASPNETCORE_ENVIRONMENT: local
       CLUSTER_IP: playground.worker.2
-      CLUSTER_PORT: 4053
-  playground.worker.3:
-    # Injected by visual studio, which messes with the image
-    image: ${DOCKER_REGISTRY-}playgroundworker
-    build:
-      context: .
-      dockerfile: src/Playground.Worker/Dockerfile
-      target: runner
-    ports:
-      # Map port 9110 to 9112. Port 9112 is used to connect to Petabridge.cmd for this node
-      - '9114:9110'
-    depends_on:
-      - lighthouse.2
-    environment:
-      ASPNETCORE_ENVIRONMENT: local
-      CLUSTER_IP: playground.worker.3
       CLUSTER_PORT: 4053

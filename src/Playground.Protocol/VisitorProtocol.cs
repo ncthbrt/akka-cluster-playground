@@ -14,8 +14,7 @@ namespace Playground.Protocol
             {
                 if (visitor is null)
                 {
-                    //I don't know why this happens but it doesn't affect api behavriour and this is the easiest way to swallow these invocations.
-                    Name = "WHY???";
+                    Name = "";
                     HasTicket = false;
                 }
                 else
