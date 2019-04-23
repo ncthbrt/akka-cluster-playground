@@ -57,16 +57,18 @@ Petabridge.cmd (https://cmd.petabridge.com/) is a way to manage Akka.NET cluster
 
 The Playground repo already has Petabridge integrated with the Worker cluster. To complete this exercise, do the following tasks:
 
-a) Add the Petabridge.cmd tool to the Web cluster.
+a) Add the Petabridge.cmd tool to the Web cluster as well.
 
-b) Log into the Petabridge.cmd tool on local.
+b) Log into the Petabridge.cmd tool on local and view the cluster
+tip: run >pbm 127.0.0.1:{port}
+the ports of the nodes are specified in the docker-compose.
 
-c) Make a few animals so we have some actors.
+c) Make a few animals so we have some actors. Refer to http://localhost:5050/swagger/index.html
 
-d) Check which has the singleton and DOWN the worker that has the singletons and see what changes in the cluster.
+d) Check which node has the singleton and DOWN the worker that has the singleton and see what changes in the cluster.
+tip: on the petabridge console, >actor hierarchy will show you whether the current node you are on has the singleton.
 
 e) Look at the logs on the worker container, and see how the singleton migrates to the other worker.
-
 
 ### Exercise 2: Creating sharded actors
 
@@ -74,10 +76,11 @@ In the solution, we have a sharded actor Playground.Worker.Actors.AnimalActor an
 
 a) Create a new sharded actor "Visitor" on the on the worker cluster. Look at the Animal actor for guidance.
 
-b) Add logic that requests a ticket from the ticket counter actor when creating a visitor. There is a limited number of tickets available, and when these run out, the visitor should be denied entrance into the zoo. When GETting a visitor, the user should get feedback as to whether the visitor has a ticket for the zoo or not. This will require you to reference the worker from itself.
+b) Implement a proxy on the worker cluster singleton to allow it to access itself. This is already done in the web cluster.
 
-c) Implement a proxy on the worker cluster to allow it to access itself. This is already done in the web cluster (in code) so you can use this to guide the implementation for the worker as well.
+c) Add logic that requests a ticket from the ticket counter actor when creating a visitor. There is a limited number of tickets available, and when these run out, the visitor should be denied entrance into the zoo.
 
+d) Wire up the visitor to the controller. When GET-ing a visitor, the user should get feedback as to whether the visitor has a ticket for the zoo or not.
 
 ### Exercise 3: Docker.compose
 
@@ -86,7 +89,7 @@ Open up the docker-compose.yml file. We use this to specify how we provision and
 a) Create a third worker node. Make sure it's networked properly.
 
 b) Add another lighthouse and add it to the seed node. Make sure they start in the same order each time using the depends_on field.
-
+tip: ALL seed node specs need to be updated: in akka.conf (arrays) as well as in docker-compose (comma-seperated strings).
 
 ### Exercise 4: Topology changes
 
@@ -98,8 +101,10 @@ b) Connect to the petabridge.cmd on one of the other nodes.
 
 c) Check the status of the cluster to see that the one that was shutdown badly is marked as unreachable.
 
-d) Use petabridge.cmd to down the node manually. Notice that this has affected the status of all the nodes in the cluster.
+d) Use petabridge.cmd to down the node manually. This should stop the error spam from the other nodes.
 
-e) Add a line to the config line for autodowning unresponsive nodes after a timeout. Repeat steps a) to d), and notice that the node is removed automatically.
+e) Add a line to the config line for autodowning unresponsive nodes after a timeout. 
+Repeat steps a) to d), and notice that the node is removed automatically.
 
-f) Now fix it permanently in code by uncommenting the coordinated shutdown line in the StopAsync() method of the WorkerService. Now repeat steps a) to d) and notice that the coordinated shutdown now brings down the node automatically without having to wait. This makes the system more responsive to topology changes.
+f) Now fix it permanently in code by uncommenting the coordinated shutdown line in the StopAsync() method of the WorkerService.
+Repeat steps a) to d) and notice that the coordinated shutdown now brings down the node automatically without having to wait. This makes the system more responsive to topology changes.
